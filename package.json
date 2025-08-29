@@ -1,7 +1,11 @@
 {
-  "name": "",
+  "name": "comfy-landing-page",
+  "description": "Landing page for Comfy - A mobile app by Moces, a Portuguese non-profit organization",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "keywords": ["comfy", "moces", "portugal", "non-profit", "mobile-app", "landing-page", "astro"],
+  "author": "Moces - Portuguese Non-Profit Organization",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

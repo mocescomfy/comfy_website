@@ -1,0 +1,245 @@
+# Cursor Rules for Moces - Comfy Landing Page
+
+This is a static website project for **Comfy**, a mobile app by **Moces** (Portuguese non-profit organization). The landing page is built with Astro and focuses on performance, accessibility, and modern web standards.
+
+## 🎯 Project Overview
+
+- **Type**: Static website (no dynamic server-side functionality)
+- **Framework**: Astro (static site generator)
+- **Language**: TypeScript
+- **Content**: Managed in Markdown where possible
+- **UI Components**: React components within Astro framework
+- **Purpose**: Landing page for mobile app with download links and organization info
+
+## 🛠️ Technology Stack
+
+- **Astro** - Modern static site generator with React component support
+- **TypeScript** - Type-safe JavaScript development
+- **React** - For interactive UI components (islands architecture)
+- **CSS3** - Modern styling with custom properties, gradients, and animations
+- **Markdown** - Content management and documentation
+
+## 📁 Project Structure
+
+```
+/
+├── src/
+│   ├── components/          # React/Astro components
+│   │   ├── Header.astro     # Navigation header
+│   │   ├── Hero.astro       # Hero section with app preview
+│   │   ├── Features.astro   # Features showcase
+│   │   ├── About.astro      # About Moces section
+│   │   ├── Download.astro   # App download section
+│   │   └── Footer.astro     # Site footer
+│   ├── layouts/
+│   │   └── Layout.astro     # Base HTML layout
+│   ├── pages/
+│   │   └── index.astro      # Main landing page
+│   └── assets/              # Static assets (images, SVGs)
+├── docs/                    # Project documentation
+│   ├── DESIGN.md           # Design system and color palette
+│   ├── DEPLOYMENT.md       # Deployment guide and configurations
+│   └── CONTENT.md          # Content guidelines (if exists)
+├── public/                  # Static assets served directly
+└── dist/                   # Build output (generated)
+```
+
+## 🎨 Design System
+
+### Color Palette
+- **Primary Brand**: Blue to Purple gradient (`#3245ff` → `#bc52ee`)
+- **Secondary**: Red to Pink gradient (`#d83333` → `#f041ff`)
+- **Text**: Dark gray (`#111827`) and medium gray (`#4b5563`)
+- **Interactive**: RGB/RGBA values for hover states and transparency
+- **Backgrounds**: Light gradients (`#f3cddd`, `#f5cee7`)
+
+### Typography
+- **Font**: Inter (Google Fonts)
+- **Weights**: 300, 400, 500, 600, 700
+- **Hierarchy**: Clear distinction between headings and body text
+
+### Visual Effects
+- Glassmorphism with backdrop-filter
+- Gradient backgrounds and borders
+- Subtle animations and transitions
+- Modern blur effects
+
+## 🚀 Development Guidelines
+
+### Core Principles
+1. **Static First**: No server-side rendering or dynamic functionality
+2. **Performance**: Aim for Lighthouse score 95+ in all categories
+3. **Accessibility**: WCAG 2.1 AA compliance
+4. **Progressive Enhancement**: Works without JavaScript, enhanced with it
+5. **Mobile First**: Responsive design starting from mobile viewport
+
+### Content Management
+- Use **Markdown** for all text content where possible
+- Store content in separate `.md` files in `src/content/` or `docs/`
+- Use Astro's content collections for structured content
+- Keep copy focused on Portuguese non-profit mission and app benefits
+
+### Component Development
+```typescript
+// Prefer React components for interactive elements
+import { useState } from 'react';
+
+export default function InteractiveButton() {
+  const [clicked, setClicked] = useState(false);
+  
+  return (
+    <button 
+      className="gradient-button"
+      onClick={() => setClicked(!clicked)}
+    >
+      Download Comfy
+    </button>
+  );
+}
+```
+
+```astro
+---
+// Use Astro components for static content
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<section class="feature-card">
+  <h3>{title}</h3>
+  <p>{description}</p>
+</section>
+
+<style>
+.feature-card {
+  background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
+  /* Use design system colors */
+}
+</style>
+```
+
+### Styling Guidelines
+- Use CSS custom properties for consistent theming
+- Implement gradients as defined in design system
+- Ensure proper contrast ratios for accessibility
+- Use modern CSS features (Grid, Flexbox, backdrop-filter)
+- Mobile-first responsive breakpoints
+
+### File Naming Conventions
+- Components: PascalCase (e.g., `HeroSection.astro`)
+- Pages: lowercase with hyphens (e.g., `about-us.astro`)
+- Assets: descriptive names (e.g., `comfy-app-preview.png`)
+- Markdown files: UPPERCASE for docs (e.g., `DESIGN.md`)
+
+## 🔧 Development Commands
+
+```bash
+# Development
+npm run dev          # Start dev server at localhost:4321
+npm run build        # Build for production
+npm run preview      # Preview production build
+npm run astro --help # Astro CLI help
+
+# Quality Assurance
+npm run type-check   # TypeScript type checking
+npm run lint         # Code linting
+npm test            # Run tests (if configured)
+```
+
+## 📝 Content Guidelines
+
+### Tone & Voice
+- **Friendly and welcoming** - Emphasize comfort and well-being
+- **Professional yet approachable** - Reflect non-profit values
+- **Clear and accessible** - Avoid technical jargon
+- **Portuguese context** - Reflect local culture while being internationally accessible
+
+### Key Messaging
+- Highlight **Moces** as Portuguese non-profit organization
+- Emphasize **Comfy app** benefits for daily life improvement
+- Focus on **comfort, well-being, and community**
+- Include clear **call-to-actions** for app downloads
+
+### Localization
+- Primary: Portuguese (PT)
+- Secondary: English (EN)
+- Use appropriate cultural references and terminology
+
+## 🚀 Performance Targets
+
+- **Core Web Vitals**: All green metrics
+- **First Paint**: < 1.5 seconds
+- **Bundle Size**: < 100KB initial load
+- **Lighthouse Score**: 95+ across all categories
+- **Accessibility**: Full WCAG 2.1 AA compliance
+
+## 🔒 Security & SEO
+
+### Required Meta Tags
+- Unique titles and descriptions for each page
+- Open Graph and Twitter Card tags
+- Proper canonical URLs
+- Viewport meta tag for responsive design
+
+### Security Headers
+```html
+<!-- Include in Layout.astro -->
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+```
+
+## 📱 React Component Integration
+
+```astro
+---
+// In Astro files, use React components for interactivity
+import DownloadButton from '../components/DownloadButton.jsx';
+---
+
+<main>
+  <!-- Static content -->
+  <h1>Welcome to Comfy</h1>
+  
+  <!-- Interactive React component -->
+  <DownloadButton client:load />
+</main>
+```
+
+### Client Directives
+- `client:load` - Load immediately
+- `client:idle` - Load when page is idle  
+- `client:visible` - Load when component enters viewport
+- `client:media` - Load based on media query
+
+## 🎯 Key Features to Maintain
+
+1. **App Preview Section** - Showcase mobile app interface
+2. **Feature Highlights** - Key app benefits and functionality
+3. **About Moces** - Non-profit organization information
+4. **Download Links** - App Store and Google Play integration
+5. **Contact Information** - Organization contact details
+
+## 📚 Resources
+
+- [Astro Documentation](https://docs.astro.build/)
+- [React in Astro](https://docs.astro.build/en/guides/integrations-guide/react/)
+- [Design System](./docs/DESIGN.md)
+- [Deployment Guide](./docs/DEPLOYMENT.md)
+
+## 🤝 Contributing
+
+1. Maintain Portuguese non-profit focus and mission
+2. Ensure all changes maintain accessibility standards
+3. Test across multiple devices and browsers
+4. Keep performance optimizations in mind
+5. Follow established design system and brand guidelines
+6. Update documentation when adding new features
+
+---
+
+*Built with ❤️ for the Comfy community and Moces organization*
