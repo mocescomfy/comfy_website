@@ -1,21 +1,23 @@
-# Design System Documentation
+# Design System Documentation - MOCES Mental Health Initiative
 
-the website's design can be found here
+Design system for the MOCES "Zona De(s)conforto" project and Comfy app landing page, focused on youth mental health support in Olhão, Portugal.
+
+Figma design reference:
 https://www.figma.com/proto/HQvtOfa5YyLW3J9pVXnqLU/Moces_Landing-Page_PA?node-id=1-39&starting-point-node-id=1%3A39
 
 
 ## Color Palette
 
-This document outlines the complete color system used in the Moces project, extracted from the codebase analysis.
+This document outlines the complete color system used in the MOCES mental health initiative, designed to be calming, supportive, and accessible for youth mental health content.
 
 ### Primary Brand Colors
 
 | Color | Hex Code | Usage |
 |-------|----------|-------|
-| Bright Blue | `#3245ff` | Primary gradient color, main brand accent |
-| Purple | `#bc52ee` | Primary gradient color, brand accent |
-| Red | `#d83333` | Secondary gradient color, code highlights |
-| Bright Pink/Magenta | `#f041ff` | Secondary gradient color, code highlights |
+| Bright Blue | `#3245ff` | Primary gradient color, trust and stability |
+| Purple | `#bc52ee` | Primary gradient color, creativity and calm |
+| Soft Red | `#d83333` | Secondary gradient color, gentle attention |
+| Bright Pink/Magenta | `#f041ff` | Secondary gradient color, warmth and support |
 
 ### Neutral Colors
 
@@ -95,22 +97,26 @@ background: linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border
 
 ## Design Principles
 
-### Color Usage Guidelines
+### Color Usage Guidelines for Mental Health Content
 
-1. **Primary Gradients**: Use blue-to-purple (`#3245ff` → `#bc52ee`) for main interactive elements
-2. **Secondary Gradients**: Use red-to-pink (`#d83333` → `#f041ff`) for code highlighting and accents
+1. **Primary Gradients**: Use blue-to-purple (`#3245ff` → `#bc52ee`) for trust-building elements and primary actions
+2. **Secondary Gradients**: Use red-to-pink (`#d83333` → `#f041ff`) for supportive accents and call-to-action elements
 3. **Text Hierarchy**: 
-   - Primary text: `#111827` (very dark gray)
-   - Secondary text: `#4b5563` (medium gray)
-4. **Interactive States**: Use RGB values with transparency for hover and focus states
-5. **Backgrounds**: Utilize subtle gradients with light pinks and lavenders for visual depth
+   - Primary text: `#111827` (very dark gray) for high readability
+   - Secondary text: `#4b5563` (medium gray) for supportive content
+4. **Interactive States**: Use RGB values with transparency for gentle, non-aggressive interactions
+5. **Backgrounds**: Utilize subtle gradients with light pinks and lavenders for calming, supportive atmosphere
+6. **Mental Health Considerations**: Colors chosen to be calming, non-triggering, and supportive
 
-### Accessibility Considerations
+### Accessibility Considerations for Mental Health Support
 
-- Primary text color (`#111827`) provides excellent contrast against white backgrounds
-- Secondary text color (`#4b5563`) maintains good readability
-- Interactive elements use sufficient color contrast ratios
-- Gradients are used as enhancements, not as sole means of conveying information
+- Primary text color (`#111827`) provides excellent contrast for users with visual impairments
+- Secondary text color (`#4b5563`) maintains good readability for extended reading
+- Interactive elements use sufficient color contrast ratios (WCAG 2.1 AA minimum)
+- Gradients are used as enhancements, not as sole means of conveying critical information
+- Color choices avoid potential triggers for users with mental health sensitivities
+- Design supports users with anxiety, depression, and other mental health conditions
+- Consistent visual hierarchy reduces cognitive load for vulnerable users
 
 ### Visual Effects
 
@@ -127,6 +133,3 @@ background: linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border
 - Responsive design maintains color consistency across breakpoints
 - Modern CSS features like `backdrop-filter` are utilized for visual enhancement
 
----
-
-*Last updated: Based on codebase analysis of Astro project structure*

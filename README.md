@@ -1,12 +1,14 @@
-# Comfy - Landing Page
+# MOCES - Apoie a Saúde Mental dos Jovens de Olhão
 
-A modern, responsive landing page for **Comfy**, a mobile app created by **Moces**, a Portuguese non-profit organization dedicated to improving well-being and comfort for everyone.
+A landing page for **MOCES** (Portuguese non-profit organization) supporting the **"Zona De(s)conforto"** project and **Comfy** mobile app, focused on youth mental health support in Olhão, Portugal.
 
 ## 🌟 About
 
-**Comfy** is a mobile application that brings convenience and comfort to daily life. This landing page showcases the app's features, allows users to download it, and provides information about the Moces organization behind it.
+**MOCES** is a Portuguese non-profit organization dedicated to supporting youth mental health through innovative projects and digital solutions.
 
-**Moces** is a Portuguese non-profit organization committed to creating solutions that enhance people's quality of life and well-being.
+**Zona De(s)conforto** is a mental health initiative targeting young people in Olhão, providing support, resources, and community connection.
+
+**Comfy** is the mobile application that serves as a digital tool for mental health support, well-being tracking, and community engagement for young people.
 
 ## 🛠️ Technology Stack
 
@@ -73,22 +75,25 @@ All commands are run from the root of the project, from a terminal:
 - Modern glassmorphism effects
 - Accessible color contrast ratios
 
-## 📱 Features to Highlight
+## 📱 Key Focus Areas
 
-### App Features
-- **Home Comfort**: Solutions for a comfortable living space
-- **Work Balance**: Tools for better work-life balance
-- **Well-being**: Features focused on mental and physical health
-- **Community**: Connect with like-minded individuals
-- **Accessibility**: Designed for all users
+### Mental Health Support
+- **Youth Focus**: Specifically designed for young people in Olhão
+- **Well-being Tools**: Digital resources for mental health support
+- **Community Connection**: Safe spaces for peer support
+- **Professional Resources**: Access to mental health professionals
+- **Accessibility**: Inclusive design for all users
 
 ### Landing Page Sections
-1. **Header**: Fixed navigation with smooth scroll
-2. **Hero**: Eye-catching introduction with app preview
-3. **Features**: Detailed feature showcase
-4. **About**: Information about Moces organization
-5. **Download**: App store links and QR codes
-6. **Footer**: Contact information and social links
+1. **Logo Zone**: MOCES, Zona De(s)conforto, and Comfy branding
+2. **Hero**: Mental health support mission statement
+3. **Project Info**: About the Zona De(s)conforto initiative
+4. **App Features**: Comfy app capabilities for mental health
+5. **Donation Impact**: How contributions support the cause
+6. **How to Help**: Ways to support youth mental health
+7. **Accessibility Goals**: Inclusive design targets
+8. **Transparency**: Organizational accountability
+9. **Call to Action**: Join the cause and donation prompts
 
 ## 🌍 Localization
 
@@ -129,25 +134,31 @@ Content should reflect Portuguese cultural context while being accessible to int
 
 ## 📝 Content Guidelines
 
-- **Tone**: Friendly, welcoming, and professional
-- **Language**: Clear and accessible (avoid jargon)
-- **Focus**: Emphasize comfort, well-being, and community
-- **Brand**: Highlight Moces' non-profit mission
-- **Call-to-Actions**: Clear and compelling download prompts
+- **Tone**: Compassionate, supportive, and professional
+- **Language**: Clear, accessible, and mentally health-aware
+- **Focus**: Youth mental health, community support, and social impact
+- **Mission**: Highlight MOCES' non-profit dedication to mental health
+- **Call-to-Actions**: Donation prompts and mental health support engagement
+- **Cultural Context**: Portuguese community focus with local relevance
 
 ## 🤝 Contributing
 
-This is a landing page for a Portuguese non-profit. When contributing:
+This is a landing page for a Portuguese non-profit focused on youth mental health. When contributing:
 
-1. Maintain the welcoming, community-focused tone
-2. Ensure accessibility standards are met
+1. Maintain compassionate, supportive tone for mental health content
+2. Ensure accessibility standards are met (critical for inclusive mental health support)
 3. Keep performance optimizations in mind
 4. Test on multiple devices and browsers
-5. Respect the Moces brand guidelines
+5. Respect the MOCES brand guidelines and mental health sensitivities
+6. Consider the impact on vulnerable youth populations
+7. Maintain cultural sensitivity for Portuguese context
 
 ## 📞 Contact
 
-**Moces** - Portuguese Non-Profit Organization
+**MOCES** - Portuguese Non-Profit Organization
+- Focus: Youth Mental Health Support in Olhão
+- Project: Zona De(s)conforto
+- App: Comfy (Mental Health Support)
 - Website: [Coming Soon]
 - Email: [Contact Information]
 - Social Media: [Links to be added]

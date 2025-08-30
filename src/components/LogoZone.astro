@@ -1,0 +1,190 @@
+---
+// Logo Zone Component - Displays the three brand logos above navigation
+import { Image } from 'astro:assets';
+import mocesLogo from '../assets/moces.png';
+import zonaLogo from '../assets/zonadesconforto.png';
+import comfyLogo from '../assets/comfy.png';
+---
+
+<section class="logo-zone">
+  <div class="logo-zone__container">
+    <!-- Moces Logo (Left) -->
+    <div class="logo-zone__logo logo-zone__logo--moces">
+      <Image
+        src={mocesLogo}
+        alt="Moces - Organização sem fins lucrativos"
+        width={176}
+        height={36}
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+
+    <!-- Zona de(s) Conforto Logo (Center) -->
+    <div class="logo-zone__logo logo-zone__logo--zona">
+      <Image
+        src={zonaLogo}
+        alt="Zona de(s) Conforto"
+        width={144}
+        height={144}
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+
+    <!-- Comfy Logo (Right) -->
+    <div class="logo-zone__logo logo-zone__logo--comfy">
+      <Image
+        src={comfyLogo}
+        alt="Comfy App"
+        width={166}
+        height={56}
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+.logo-zone {
+  position: relative;
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.logo-zone__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  width: 646px;
+  height: 144px;
+  opacity: 1;
+}
+
+.logo-zone__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Moces Logo (Left) */
+.logo-zone__logo--moces {
+  width: 176px;
+  height: 36px;
+}
+
+.logo-zone__logo--moces img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Zona de(s) Conforto Logo (Center) */
+.logo-zone__logo--zona {
+  width: 144px;
+  height: 144px;
+}
+
+.logo-zone__logo--zona img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Comfy Logo (Right) */
+.logo-zone__logo--comfy {
+  width: 166px;
+  height: 56px;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.logo-zone__logo--comfy img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo-zone {
+    padding-top: 20px;
+  }
+  
+  .logo-zone__container {
+    flex-direction: column;
+    gap: 20px;
+    width: auto;
+    height: auto;
+    padding: 0 20px;
+  }
+  
+  /* Scale down logos on mobile */
+  .logo-zone__logo--moces {
+    width: 140px;
+    height: 29px;
+  }
+  
+  .logo-zone__logo--zona {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .logo-zone__logo--comfy {
+    width: 133px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-zone__container {
+    gap: 15px;
+  }
+  
+  /* Further scale down on very small screens */
+  .logo-zone__logo--moces {
+    width: 120px;
+    height: 24px;
+  }
+  
+  .logo-zone__logo--zona {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .logo-zone__logo--comfy {
+    width: 110px;
+    height: 37px;
+  }
+}
+
+@media (max-width: 820px) and (min-width: 769px) {
+  /* Tablet adjustments */
+  .logo-zone__container {
+    gap: 60px;
+    width: 550px;
+  }
+  
+  .logo-zone__logo--moces {
+    width: 150px;
+    height: 31px;
+  }
+  
+  .logo-zone__logo--zona {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .logo-zone__logo--comfy {
+    width: 140px;
+    height: 47px;
+  }
+}
+</style>

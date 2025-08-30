@@ -1,18 +1,20 @@
 ---
 import Welcome from '../components/Welcome.astro';
 import Navbar from '../components/Navbar.tsx';
+import LogoZone from '../components/LogoZone.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
+	<LogoZone />
 	<Navbar client:load />
 	<main class="main-content">
-		<Welcome />
+		
 	</main>
 </Layout>
 
 <style>
 	.main-content {
-		padding-top: 5rem; /* Account for fixed navbar */
+		padding-top: 0; /* No longer need padding for fixed navbar */
 	}
 </style>

@@ -1,6 +1,6 @@
-# Cursor Rules for Moces - Comfy Landing Page
+# Cursor Rules for MOCES - Youth Mental Health Support Initiative
 
-This is a static website project for **Comfy**, a mobile app by **Moces** (Portuguese non-profit organization). The landing page is built with Astro and focuses on performance, accessibility, and modern web standards.
+This is a static website project for **MOCES** (Portuguese non-profit organization) promoting the **"Zona De(s)conforto"** project and **Comfy** app, focused on youth mental health support in Olhão, Portugal. The landing page is built with Astro and emphasizes accessibility, mental health sensitivity, and donation conversion.
 
 ## 🎯 Project Overview
 
@@ -9,7 +9,7 @@ This is a static website project for **Comfy**, a mobile app by **Moces** (Portu
 - **Language**: TypeScript
 - **Content**: Managed in Markdown where possible
 - **UI Components**: React components within Astro framework
-- **Purpose**: Landing page for mobile app with download links and organization info
+- **Purpose**: Donation-focused landing page for mental health initiative with app promotion and support resources
 
 ## 🛠️ Technology Stack
 
@@ -80,8 +80,15 @@ This is a static website project for **Comfy**, a mobile app by **Moces** (Portu
 - Keep copy focused on Portuguese non-profit mission and app benefits
 
 ### Component Development
+
+**Primary Preference: React Components**
+- Default to React components for all new component development
+- Use React for both interactive and static UI elements 
+- Leverage Astro's islands architecture with React components
+- Only use Astro components when React integration is not feasible
+
 ```typescript
-// Prefer React components for interactive elements
+// Primary approach: React components for all UI elements
 import { useState } from 'react';
 
 export default function InteractiveButton() {
@@ -98,28 +105,37 @@ export default function InteractiveButton() {
 }
 ```
 
-```astro
----
-// Use Astro components for static content
-interface Props {
+```typescript
+// React components for static content as well
+interface FeatureCardProps {
   title: string;
   description: string;
 }
 
-const { title, description } = Astro.props;
+export default function FeatureCard({ title, description }: FeatureCardProps) {
+  return (
+    <section className="feature-card">
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </section>
+  );
+}
+```
+
+```astro
+---
+// Use Astro components only when necessary (layouts, page structure)
+// Import and use React components within Astro pages
+import FeatureCard from '../components/FeatureCard.tsx';
 ---
 
-<section class="feature-card">
-  <h3>{title}</h3>
-  <p>{description}</p>
-</section>
-
-<style>
-.feature-card {
-  background: linear-gradient(83.21deg, #3245ff 0%, #bc52ee 100%);
-  /* Use design system colors */
-}
-</style>
+<main>
+  <FeatureCard 
+    title="Mental Health Support" 
+    description="Comprehensive support for youth in Olhão"
+    client:load 
+  />
+</main>
 ```
 
 ### Styling Guidelines
@@ -152,17 +168,22 @@ npm test            # Run tests (if configured)
 
 ## 📝 Content Guidelines
 
-### Tone & Voice
-- **Friendly and welcoming** - Emphasize comfort and well-being
-- **Professional yet approachable** - Reflect non-profit values
-- **Clear and accessible** - Avoid technical jargon
-- **Portuguese context** - Reflect local culture while being internationally accessible
+### Tone & Voice for Mental Health Content
+- **Compassionate and supportive** - Emphasize understanding and non-judgment
+- **Professional yet warm** - Build trust while maintaining approachability
+- **Clear and accessible** - Avoid both technical and clinical jargon
+- **Mentally health-aware** - Use language that doesn't stigmatize or trigger
+- **Portuguese context** - Reflect local Olhão community while being accessible
+- **Hope-focused** - Emphasize positive outcomes and community support
+- **Inclusive** - Welcome all youth regardless of background or mental health status
 
 ### Key Messaging
-- Highlight **Moces** as Portuguese non-profit organization
-- Emphasize **Comfy app** benefits for daily life improvement
-- Focus on **comfort, well-being, and community**
-- Include clear **call-to-actions** for app downloads
+- Highlight **MOCES** as Portuguese non-profit supporting youth mental health
+- Emphasize **"Zona De(s)conforto"** project impact in Olhão
+- Promote **Comfy app** as mental health support tool for young people
+- Focus on **mental health awareness, community support, and social impact**
+- Include clear **call-to-actions** for donations and mental health support
+- Emphasize transparency and responsible use of donations
 
 ### Localization
 - Primary: Portuguese (PT)
@@ -218,11 +239,16 @@ import DownloadButton from '../components/DownloadButton.jsx';
 
 ## 🎯 Key Features to Maintain
 
-1. **App Preview Section** - Showcase mobile app interface
-2. **Feature Highlights** - Key app benefits and functionality
-3. **About Moces** - Non-profit organization information
-4. **Download Links** - App Store and Google Play integration
-5. **Contact Information** - Organization contact details
+1. **Logo Zone** - MOCES, Zona De(s)conforto, and Comfy branding display
+2. **Hero Section** - Mental health support mission for Olhão youth
+3. **Project Information** - "Zona De(s)conforto" initiative details
+4. **App Showcase** - Comfy app mental health features
+5. **Donation Impact** - How contributions support youth mental health
+6. **How to Help** - Multiple ways to support the cause
+7. **Accessibility Goals** - Inclusive design commitments
+8. **Transparency Section** - Organizational accountability and responsible use of funds
+9. **Call to Action** - Join the cause and donation conversion
+10. **Contact Information** - Mental health resources and organization details
 
 ## 📚 Resources
 
@@ -233,12 +259,16 @@ import DownloadButton from '../components/DownloadButton.jsx';
 
 ## 🤝 Contributing
 
-1. Maintain Portuguese non-profit focus and mission
-2. Ensure all changes maintain accessibility standards
+1. Maintain Portuguese non-profit focus on youth mental health
+2. Ensure all changes maintain accessibility standards (critical for mental health support)
 3. Test across multiple devices and browsers
 4. Keep performance optimizations in mind
 5. Follow established design system and brand guidelines
-6. Update documentation when adding new features
+6. Consider mental health sensitivity in all content and design decisions
+7. Maintain cultural sensitivity for Portuguese/Olhão context
+8. Ensure donation transparency and ethical fundraising practices
+9. Test with users who may have mental health conditions
+10. Update documentation when adding new features
 
 ---
 
