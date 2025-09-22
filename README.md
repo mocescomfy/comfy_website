@@ -57,6 +57,46 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
+## 🌐 Deploy to Plain HTTP Hosting (Static Server)
+
+You can deploy the built static site to any basic HTTP server (e.g., cPanel/FTP, Apache, Nginx, shared hosting). The build outputs static files to `dist/` which you upload to your server.
+
+### 1) Decide your public URL and base path
+- Hosting at domain root: `http://example.com` → use `BASE_PATH=/`
+- Hosting in a subfolder: `http://example.com/moces/` → use `BASE_PATH=/moces/`
+
+Set the `SITE` environment variable to your public origin (no path). `base` is handled by `BASE_PATH`.
+
+### 2) Build for production
+
+Root URL (site at domain root):
+```bash
+SITE=http://example.com \
+BASE_PATH=/ \
+npm run build
+```
+
+Subdirectory (site under a path, e.g., /moces/):
+```bash
+SITE=http://example.com \
+BASE_PATH=/moces/ \
+npm run build
+```
+
+This generates the site in the `dist/` directory with correct asset and link paths.
+
+### 3) Upload to your server
+- If hosting at root, upload the contents of `dist/` into your server's document root (e.g., `public_html/`).
+- If hosting in a subfolder, create that folder (e.g., `public_html/moces/`) and upload the contents of `dist/` there.
+
+No special rewrite rules are required for this site; it is fully static with client-side enhancements.
+
+### 4) Test locally before uploading (optional)
+```bash
+npm run preview
+```
+Then open the preview URL. Note: preview uses a local server; absolute URLs in sitemaps/canonicals come from `SITE`.
+
 ## 🎨 Design System
 
 ### Colors
