@@ -7,6 +7,7 @@
   background: transparent;
   padding: 1rem 0;
   transition: all 0.3s ease;
+  color: black;
 }
 
 .navbar--scrolled {
@@ -62,7 +63,7 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: black;
   transition: all 0.3s ease;
   cursor: pointer;
   border-radius: 80px;
@@ -225,13 +226,6 @@
 /* Smooth scrolling enhancement */
 html {
   scroll-behavior: smooth;
-}
-
-/* Focus styles for accessibility */
-.navbar__link:focus,
-.navbar__toggle:focus {
-  outline: 2px solid #3245ff;
-  outline-offset: 2px;
 }
 
 /* Reduced motion support */
