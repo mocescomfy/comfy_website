@@ -10,6 +10,10 @@ A landing page for **MOCES** (Portuguese non-profit organization) supporting the
 
 **Comfy** is the mobile application that serves as a digital tool for mental health support, well-being tracking, and community engagement for young people.
 
+## 🎨 Figma
+
+- Main file: https://www.figma.com/design/odanCgLViklOxyQEGP7t5t/Moces_Landing-Page_PA--Copy-?node-id=1-40&p=f&t=tlCIFOCNJGCIhHAt-0
+
 ## 🛠️ Technology Stack
 
 - **[Astro](https://astro.build/)** - Modern static site generator

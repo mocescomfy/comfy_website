@@ -2,8 +2,8 @@
 
 Design system for the MOCES "Zona De(s)conforto" project and Comfy app landing page, focused on youth mental health support in Olhão, Portugal.
 
-Figma design reference:
-https://www.figma.com/proto/HQvtOfa5YyLW3J9pVXnqLU/Moces_Landing-Page_PA?node-id=1-39&starting-point-node-id=1%3A39
+Figma design reference (main):
+https://www.figma.com/design/odanCgLViklOxyQEGP7t5t/Moces_Landing-Page_PA--Copy-?node-id=1-40&p=f&t=tlCIFOCNJGCIhHAt-0
 
 
 ## Color Palette

@@ -1,38 +1,56 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Navbar from '../components/Navbar.tsx';
 import LogoZone from '../components/LogoZone.astro';
+import Navbar from '../components/Navbar.tsx';
+import Hero from '../components/sections/Hero.tsx';
+import Project from '../components/sections/Project.tsx';
+import AppComfy from '../components/sections/AppComfy.tsx';
+import Impact from '../components/sections/Impact.tsx';
+import Contribute from '../components/sections/Contribute.tsx';
+import Transparency from '../components/sections/Transparency.tsx';
+import JoinCause from '../components/sections/JoinCause.tsx';
+import Footer from '../components/layout/Footer.tsx';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<LogoZone />
-	<Navbar client:load />
-	<div class="green-star-background">
-		<img src="/greenstar.svg" alt="" class="green-star" />
+	<!-- Header with Logo Zone (static) and sticky Navigation -->
+	<header>
+		<LogoZone />
+	</header>
+	<div class="sticky top-0 z-50 bg-[#FAF0E6]">
+		<Navbar client:load />
 	</div>
-	<main class="main-content">
+
+	<!-- Decorative Background Star removed to avoid duplication (handled in Hero) -->
+
+	<!-- Main Content -->
+	<main class="relative z-10">
+		<!-- Hero Section -->
+		<Hero client:load />
 		
+		<!-- O Projeto Section -->
+		<Project client:load />
+		
+		<!-- App Comfy Section -->
+		<AppComfy client:load />
+		
+		<!-- Impacto Section -->
+		<Impact client:load />
+		
+		<!-- Como Contribuir Section -->
+		<Contribute client:load />
+		
+		<!-- Transparência Section -->
+		<Transparency client:load />
+		
+		<!-- Junte-se à Causa Section -->
+		<JoinCause client:load />
 	</main>
+
+	<!-- Footer -->
+	<Footer client:load />
 </Layout>
 
 <style>
-	.main-content {
-		padding-top: 0; /* No longer need padding for fixed navbar */
-	}
-
-	.green-star-background {
-		position: fixed;
-		top: 131px;
-		left: -116px;
-		width: 436px;
-		height: 464px;
-		pointer-events: none;
-	}
-
-	.green-star {
-		width: 100%;
-		height: 100%;
-		opacity: 1;
-	}
+	/* Remove any remaining custom styles since we're using Tailwind */
 </style>

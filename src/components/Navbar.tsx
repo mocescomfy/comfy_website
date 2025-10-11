@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import './Navbar.css';
 
 interface NavItem {
   label: string;
@@ -26,7 +25,16 @@ export default function Navbar() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    // Support external toggle events from LogoZone
+    const externalToggle = () => setIsMenuOpen((v) => !v);
+    const externalClose = () => setIsMenuOpen(false);
+    window.addEventListener('toggle-menu', externalToggle as EventListener);
+    window.addEventListener('close-menu', externalClose as EventListener);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('toggle-menu', externalToggle as EventListener);
+      window.removeEventListener('close-menu', externalClose as EventListener);
+    };
   }, []);
 
   const toggleMenu = () => {
@@ -50,16 +58,18 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`navbar ${isScrolled ? 'navbar--scrolled' : ''}`}>
-      <div className="navbar__container">
-        <div className="navbar__nav-pill">
+    <nav className={`relative w-full z-[1000] transition-all duration-300 py-4 ${
+      isScrolled ? 'bg-white/98 backdrop-blur-xl shadow-[0_2px_20px_rgba(0,0,0,0.1)]' : 'bg-transparent'
+    }`}>
+      <div className="hidden lg:flex justify-center max-w-[1200px] mx-auto px-8">
+        <div className={`bg-[#B496C8] rounded-[80px] h-[51px] px-10 flex items-center shadow-[0_4px_20px_rgba(180,150,200,0.3)]`}>
           {/* Desktop Navigation */}
-          <ul className={`navbar__menu ${isMenuOpen ? 'navbar__menu--active' : ''}`}>
+          <ul className={`flex items-center gap-2 list-none m-0 p-0`}>
             {navItems.map((item, index) => (
-              <li key={index} className="navbar__item">
+              <li key={index} className="m-0">
                 <a
                   href={item.href}
-                  className="navbar__link"
+                  className="block px-4 font-fredoka text-base font-semibold leading-none text-center uppercase no-underline text-black transition-all duration-300 cursor-pointer rounded-[80px] whitespace-nowrap relative h-[51px] flex items-center justify-center hover:bg-[#BEC864] hover:text-[#111827] md:text-black"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNavClick(item.href);
@@ -70,25 +80,33 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-
-          {/* Mobile Menu Toggle */}
-          <button
-            className={`navbar__toggle ${isMenuOpen ? 'navbar__toggle--active' : ''}`}
-            onClick={toggleMenu}
-            aria-label="Toggle navigation menu"
-            aria-expanded={isMenuOpen}
-          >
-            <span className="navbar__toggle-line"></span>
-            <span className="navbar__toggle-line"></span>
-            <span className="navbar__toggle-line"></span>
-          </button>
         </div>
       </div>
+
+      {/* Mobile Menu Items (full-screen overlay) */}
+      {isMenuOpen && (
+        <ul className="md:hidden fixed inset-0 bg-gradient-to-r from-purple-500 to-purple-600 backdrop-blur-xl flex flex-col justify-center items-center gap-4 p-8 z-[1000]">
+          {navItems.map((item, index) => (
+            <li key={index} className="w-full text-center">
+              <a
+                href={item.href}
+                className="block py-4 px-4 font-fredoka text-lg font-semibold leading-none uppercase w-full text-white rounded-lg transition-all duration-300 hover:bg-[#BEC864] hover:text-[#111827]"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(item.href);
+                }}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
         <div 
-          className="navbar__overlay"
+          className="fixed inset-0 bg-black/50 z-[999] md:hidden"
           onClick={closeMenu}
           aria-hidden="true"
         />
