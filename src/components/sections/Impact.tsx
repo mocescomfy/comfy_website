@@ -51,7 +51,27 @@ export default function Impact() {
             </p>
           </div>
 
-          {/* RIGHT COLUMN: Visual Elements and Callout */}
+          {/* RIGHT COLUMN: Visual Elements and Callout - Mobile */}
+          <div className="relative block md:hidden min-h-[350px]">
+            {/* Person photo in cloud shape - centered on mobile */}
+            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[250px] h-[200px]">
+              <img src="/app/cloud_kneeling_phone.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
+            </div>
+
+            {/* Callout box - positioned overlapping with cloud photo on mobile */}
+            <div className="absolute top-[100px] w-[200px] left-1/2 -translate-x-1/2 text-center bg-[#A0D2B4] rounded-[20px] p-4 z-5">
+              <p className="text-xs text-[#111827]">
+                A app vai ajudar os jovens a melhorar a sua saúde mental, a sua autoestima e a se sentirem mais conectados
+              </p>
+            </div>
+
+            {/* Purple smiling character - bottom center on mobile */}
+            <div className="absolute left-1/2 -translate-x-1/2 top-[240px] w-[100px] h-[125px] z-10">
+              <img src="/app/pink_square_pants.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
+            </div>
+          </div>
+
+          {/* RIGHT COLUMN: Visual Elements and Callout - Tablet */}
           <div className="relative hidden md:block lg:hidden min-h-[400px]">
             {/* Person photo in cloud shape - centered on tablet */}
             <div className="absolute md:left-[340px] md:w-[300px] md:right-auto top-[-15px]">
