@@ -6,7 +6,7 @@ export default function JoinCause() {
     <section id="causa" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#B496C8]">
       <div className="container-responsive max-w-4xl">
         <div className="bg-white/20 backdrop-blur-sm rounded-[20px] p-8 md:p-12 text-white">
-          <h2 className="font-fredoka text-3xl font-bold text-center md:text-4xl lg:text-5xl mb-6">
+          <h2 className="text-3xl font-bold text-center md:text-4xl lg:text-5xl mb-6">
             Junte-se à Causa
           </h2>
           
@@ -40,7 +40,7 @@ export default function JoinCause() {
           </div>
 
           <div className="text-center">
-            <p className="font-fredoka font-semibold mb-4">Partilhar o projeto:</p>
+            <p className="font-semibold mb-4">Partilhar o projeto:</p>
             <div className="flex justify-center gap-4">
               <a href="#" className="w-12 h-12 bg-white/30 rounded-full flex items-center justify-center hover:bg-white/50 transition-colors">
                 <span className="text-2xl">f</span>

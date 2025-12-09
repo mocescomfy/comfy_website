@@ -24,26 +24,26 @@ export default function AppComfy() {
         {/* Lavender rounded panel */}
         <div className="relative z-[1] mx-auto max-w-[1280px] bg-[#B496C8] rounded-[40px] md:rounded-[60px] lg:rounded-[80px] px-6 md:px-10 lg:px-20 py-12 md:py-16 lg:py-24 overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
           {/* Centered content */}
-          <div className="relative z-[2] max-w-[946px] mx-auto flex flex-col items-center gap-8">
+          <div className="relative z-[2] max-w-[946px] mx-auto flex flex-col items-center gap-8 z-[1000]">
             {/* Title */}
             <div className="flex items-end justify-center gap-3">
-              <h2 className="font-fredoka font-semibold text-black text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08]">A App</h2>
+              <h2 className="font-semibold text-black text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08]">A App</h2>
               <span className="h-[46px] md:h-[58px] lg:h-[74px] inline-block">
                 <img src="/app/greencloud.svg" alt="" className="h-full w-auto" />
               </span>
             </div>
-            <h3 className="font-fredoka font-semibold text-black text-center text-[28px] md:text-[40px] lg:text-[56px] leading-[1.08]">
+            <h3 className="font-semibold text-black text-center text-[28px] md:text-[40px] lg:text-[56px] leading-[1.08] z-[1000]">
               Apoio ao Bem-Estar e Saúde Mental dos Jovens
             </h3>
             {/* Body */}
-            <p className="font-fredoka text-black text-center text-[16px] leading-6 md:text-[20px] md:leading-8 lg:text-[24px] lg:leading-8 max-w-[820px]">
+            <p className="text-black text-center text-[16px] leading-6 md:text-[20px] md:leading-8 lg:text-[24px] lg:leading-8 max-w-[820px] z-[1000]">
               A app Comfy foi desenhada para ajudar os jovens a desenvolverem as suas competências emocionais, melhorar a autoestima e aumentar a resiliência de maneira gratuita. Através de conteúdos interativos e ferramentas adaptadas, os jovens terão o apoio necessário para enfrentar situações de stress, ansiedade e outros desafios emocionais, promovendo um equilíbrio psicológico saudável.
             </p>
 
             {/* Layered CTA */}
             <div className="relative h-16 md:h-20 w-[300px] md:w-[380px] lg:w-[397px] mt-2">
               <div className="absolute left-1/2 top-1/2 -translate-x-[calc(50%-4px)] -translate-y-[calc(50%-4px)] bg-black border-4 border-black rounded-[24px] px-8 md:px-10 py-4 md:py-6" aria-hidden />
-              <Button variant="secondary" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-black rounded-[24px] !px-10 !py-6 uppercase font-fredoka text-[16px] md:text-[20px] lg:text-[24px] w-full whitespace-nowrap">
+              <Button variant="secondary" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-black rounded-[24px] !px-10 !py-6 uppercase text-[16px] md:text-[20px] lg:text-[24px] w-full whitespace-nowrap">
                 CONHEÇA A APP COMFY
               </Button>
             </div>

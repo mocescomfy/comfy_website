@@ -17,7 +17,7 @@ export default function Button({
   className = '',
   type = 'button'
 }: ButtonProps) {
-  const baseClasses = "rounded-full px-8 py-4 font-fredoka font-semibold transition-all duration-300 inline-block text-center";
+  const baseClasses = "rounded-full px-8 py-4 font-semibold transition-all duration-300 inline-block text-center";
   
   const variantClasses = {
     primary: "bg-gradient-to-r from-[#3245ff] to-[#bc52ee] text-white hover:shadow-[0_8px_30px_rgba(50,69,255,0.3)] hover:scale-105",

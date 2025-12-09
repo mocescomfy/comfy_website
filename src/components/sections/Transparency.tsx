@@ -4,7 +4,7 @@ export default function Transparency() {
   return (
     <section id="transparencia" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-gray-100">
       <div className="container-responsive max-w-4xl">
-        <h2 className="font-fredoka text-3xl font-bold text-[#111827] text-center md:text-4xl lg:text-5xl mb-8">
+        <h2 className="text-3xl font-bold text-[#111827] text-center md:text-4xl lg:text-5xl mb-8">
           Transparência e Responsabilidade
         </h2>
         
@@ -16,13 +16,13 @@ export default function Transparency() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mt-8">
-          <a href="#" className="font-fredoka font-semibold text-[#3245ff] hover:text-[#bc52ee] transition-colors underline">
+          <a href="#" className="font-semibold text-[#3245ff] hover:text-[#bc52ee] transition-colors underline">
             LINK 1
           </a>
-          <a href="#" className="font-fredoka font-semibold text-[#3245ff] hover:text-[#bc52ee] transition-colors underline">
+          <a href="#" className="font-semibold text-[#3245ff] hover:text-[#bc52ee] transition-colors underline">
             LINK 2
           </a>
-          <a href="#" className="font-fredoka font-semibold text-[#3245ff] hover:text-[#bc52ee] transition-colors underline">
+          <a href="#" className="font-semibold text-[#3245ff] hover:text-[#bc52ee] transition-colors underline">
             LINK 3
           </a>
         </div>

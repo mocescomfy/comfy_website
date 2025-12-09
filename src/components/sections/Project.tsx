@@ -12,10 +12,10 @@ export default function Project() {
         {/* Row 1: Title and badge */}
         <div className="flex items-start justify-between gap-8">
           <div className="max-w-[752px]">
-            <h2 className="font-fredoka font-semibold text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08] text-black">
+            <h2 className="font-semibold text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08] text-black">
               O Projeto Zona De(s)conforto
             </h2>
-            <p className="mt-6 font-fredoka font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
+            <p className="mt-6 font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
               <span className="font-bold">Zona De(s)conforto</span> é um projeto premiado apoiado pelo <span className="font-bold">Portugal Inovação Social</span>, criado pela <span className="font-bold">MOCES</span>. A sua missão é promover a saúde mental entre jovens dos 12 aos 18 anos, através de uma combinação de atividades presenciais nas escolas e uma app inovadora e gratuita (a App Comfy). O projeto oferece um espaço seguro para o desenvolvimento de competências emocionais, o aumento da autoestima e a construção de resiliência para enfrentar os desafios da vida.
             </p>
           </div>
@@ -41,7 +41,7 @@ export default function Project() {
 
           {/* Right copy + CTA */}
           <div className="flex flex-col gap-12 max-w-[558px]">
-            <div className="font-fredoka text-black">
+            <div className="text-black">
               <p className="text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px]">
                 Este é o início de um movimento para tornar a saúde mental uma prioridade. Começando no Município de Olhão, o nosso objetivo é expandir este impacto transformador a nível nacional.
               </p>
@@ -62,7 +62,7 @@ export default function Project() {
               />
               <button 
                 aria-disabled 
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#d7d7aa] px-10 py-6 rounded-[24px] border-4 border-black font-fredoka font-semibold text-[14px] md:text-[16px] lg:text-[16px] uppercase text-black whitespace-nowrap"
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#d7d7aa] px-10 py-6 rounded-[24px] border-4 border-black font-semibold text-[14px] md:text-[16px] lg:text-[16px] uppercase text-black whitespace-nowrap"
               >
                 SAIBA MAIS SOBRE O PROJETO
               </button>

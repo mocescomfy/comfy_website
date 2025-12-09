@@ -41,10 +41,10 @@ export default function Hero() {
         <div className="flex flex-col items-center gap-12 md:gap-12 max-w-[310px] md:max-w-[680px] lg:max-w-[900px] mx-auto text-center">
           {/* Heading and subtitle */}
           <div className="flex flex-col gap-8 md:gap-8 items-center w-full">
-            <h1 className="font-fredoka font-semibold text-[48px] md:text-[72px] lg:text-[96px] leading-[1.08] text-black uppercase">
+            <h1 className="font-semibold text-[48px] md:text-[72px] lg:text-[96px] leading-[1.08] text-black uppercase">
               Apoie a Saúde Mental dos Jovens de Olhão
             </h1>
-            <p className="font-fredoka font-normal text-[20px] md:text-2xl lg:text-2xl leading-[28px] md:leading-8 text-black w-full">
+            <p className="font-normal text-[20px] md:text-2xl lg:text-2xl leading-[28px] md:leading-8 text-black w-full">
               Ajude a criar a app Comfy e promover o bem-estar emocional dos jovens
             </p>
           </div>

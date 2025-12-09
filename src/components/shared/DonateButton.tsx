@@ -15,7 +15,7 @@ export default function DonateButton({ href = '#contribuir', onClick, className 
         className="absolute left-[2.72px] top-[2.72px] flex items-center justify-center gap-4 md:gap-6 px-[27px] py-[16px] md:px-10 md:py-6 bg-black border-[2.72px] md:border-4 border-black rounded-3xl"
         aria-hidden="true"
       >
-        <span className="font-fredoka font-semibold text-[16.32px] md:text-2xl text-black uppercase leading-none whitespace-nowrap">
+        <span className="font-semibold text-[16.32px] md:text-2xl text-black uppercase leading-none whitespace-nowrap">
           Faça uma Doação
         </span>
         <DonateFace className="w-[41px] h-[16px] md:w-[60px] md:h-6" strokeWidth={2.72} variant="hover" />
@@ -25,7 +25,7 @@ export default function DonateButton({ href = '#contribuir', onClick, className 
       <div 
         className="group relative flex items-center justify-center gap-4 md:gap-6 px-[27px] py-[16px] md:px-10 md:py-6 bg-[#d7d7aa] border-[2.72px] md:border-4 border-black rounded-3xl transition-all duration-200 hover:translate-x-1 hover:translate-y-1 active:translate-x-1 active:translate-y-1 cursor-pointer"
       >
-        <span className="font-fredoka font-semibold text-[16.32px] md:text-2xl text-black uppercase leading-none whitespace-nowrap">
+        <span className="font-semibold text-[16.32px] md:text-2xl text-black uppercase leading-none whitespace-nowrap">
           Faça uma Doação
         </span>
         {/* Instant swap between normal and hover faces (no animation) */}

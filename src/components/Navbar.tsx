@@ -69,7 +69,7 @@ export default function Navbar() {
               <li key={index} className="m-0">
                 <a
                   href={item.href}
-                  className="block px-4 font-fredoka text-base font-semibold leading-none text-center uppercase no-underline text-black transition-all duration-300 cursor-pointer rounded-[80px] whitespace-nowrap relative h-[51px] flex items-center justify-center hover:bg-[#BEC864] hover:text-[#111827] md:text-black"
+                  className="block px-4 text-base font-semibold leading-none text-center uppercase no-underline text-black transition-all duration-300 cursor-pointer rounded-[80px] whitespace-nowrap relative h-[51px] flex items-center justify-center hover:bg-[#BEC864] hover:text-[#111827] md:text-black"
                   onClick={(e) => {
                     e.preventDefault();
                     handleNavClick(item.href);
@@ -90,7 +90,7 @@ export default function Navbar() {
             <li key={index} className="w-full text-center">
               <a
                 href={item.href}
-                className="block py-4 px-4 font-fredoka text-lg font-semibold leading-none uppercase w-full text-white rounded-lg transition-all duration-300 hover:bg-[#BEC864] hover:text-[#111827]"
+                className="block py-4 px-4 text-lg font-semibold leading-none uppercase w-full text-white rounded-lg transition-all duration-300 hover:bg-[#BEC864] hover:text-[#111827]"
                 onClick={(e) => {
                   e.preventDefault();
                   handleNavClick(item.href);
