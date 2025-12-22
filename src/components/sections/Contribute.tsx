@@ -3,7 +3,7 @@ import Button from '../shared/Button';
 import DonateButton from '../shared/DonateButton';
 import StarDecoration from '../shared/decorations/StarDecoration';
 import PinkBlobDecoration from '../shared/decorations/PinkBlobDecoration';
-import ProgressBar from '../shared/ProgressBar';
+import FundraisingGoal from './FundraisingGoal';
 
 export default function Contribute() {
   return (
@@ -50,29 +50,7 @@ export default function Contribute() {
             />
 
           {/* RIGHT/BOTTOM: Fundraising Goal - 1/3 width */}
-          <div className="flex-1 relative bg-[#A0D2B4] rounded-[20px] p-8 md:p-12 lg:p-16 shadow-xl">
-            {/* Title for mobile and desktop */}
-            <h3 className="text-[40px] leading-[48px] font-bold text-[#111827] mb-8 lg:mb-[32px] text-center md:hidden lg:block" style={{ fontFamily: 'Fredoka, sans-serif' }}>
-              <p className="mb-0">Meta de</p>
-              <p>Arrecadação</p>
-            </h3>
-
-            {/* Progress Bar Container */}
-            <div className="flex items-start gap-8 md:gap-12 lg:gap-[32px]">
-              {/* Vertical title for tablet only */}
-              <div className="hidden md:block lg:hidden flex-shrink-0">
-                <h3 
-                  className="text-2xl font-bold text-[#111827] whitespace-nowrap text-center"
-                  style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', fontFamily: 'Fredoka, sans-serif' }}
-                >
-                  Meta de Arrecadação
-                </h3>
-              </div>
-
-              {/* Progress Bar */}
-              <ProgressBar />
-            </div>
-          </div>
+          <FundraisingGoal />
 
         </div>
       </div>
