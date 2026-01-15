@@ -10,7 +10,7 @@ interface DonateButtonProps {
 }
 
 export default function DonateButton({ 
-  href = '#contribuir', 
+  href = 'https://gofund.me/5eb16f31a', 
   onClick, 
   className = '',
   text = 'Faça uma Doação',
@@ -54,8 +54,13 @@ export default function DonateButton({
   );
 
   if (href && !onClick) {
+    const isExternal = /^https?:\/\//i.test(href);
     return (
-      <a href={href} className="inline-block no-underline">
+      <a
+        href={href}
+        className="inline-block no-underline"
+        {...(isExternal ? { target: '_blank', rel: 'noreferrer noopener' } : {})}
+      >
         {buttonContent}
       </a>
     );
