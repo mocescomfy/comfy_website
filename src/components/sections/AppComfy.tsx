@@ -6,16 +6,16 @@ export default function AppComfy() {
     <section id="app" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-transparent">
       {/* Cloud decoration top-right */}
       <div className="pointer-events-none absolute right-[10px] rotate-[20deg] top-[10px] w-[436px] h-[326px] opacity-80 hidden lg:block z-0">
-        <img src="/app/greencloud-top.svg" alt="" className="w-full h-full object-contain" />
+        <img src="app/greencloud-top.svg" alt="" className="w-full h-full object-contain" />
       </div>
 
       <div aria-hidden className="hidden lg:block absolute left-[72px] top-[0px] z-[10]">
         <div className="relative w-[280px] h-[520px]">
           <div className="absolute left-10 top-[72px] rotate-[-7deg] w-[220px] h-[460px] rounded-[24px] border-4 border-[#B496C8] overflow-hidden bg-white shadow-[0_6px_20px_rgba(0,0,0,0.15)]">
-            <img src="/app/phone-left-1.png" alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src="app/phone-left-1.png" alt="" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="absolute -left-[140px] top-0 rotate-[-27deg] w-[220px] h-[460px] rounded-[24px] border-4 border-[#B496C8] overflow-hidden bg-white shadow-[0_6px_20px_rgba(0,0,0,0.15)]">
-            <img src="/app/phone-left-2.png" alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src="app/phone-left-2.png" alt="" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@ export default function AppComfy() {
             <div className="flex items-end justify-center gap-3">
               <h2 className="font-semibold text-black text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08]">A App</h2>
               <span className="h-[46px] md:h-[58px] lg:h-[74px] inline-block">
-                <img src="/app/greencloud.svg" alt="" className="h-full w-auto" />
+                <img src="app/greencloud.svg" alt="" className="h-full w-auto" />
               </span>
             </div>
             <h3 className="font-semibold text-black text-center text-[28px] md:text-[40px] lg:text-[56px] leading-[1.08] z-[1000]">
@@ -56,17 +56,17 @@ export default function AppComfy() {
       <div aria-hidden className="hidden lg:block absolute right-[72px] bottom-[32px] z-[10]">
         <div className="relative w-[280px] h-[520px]">
           <div className="absolute right-0 bottom-0 rotate-[10deg] w-[220px] h-[460px] rounded-[24px] border-4 border-[#B496C8] overflow-hidden bg-white shadow-[0_6px_20px_rgba(0,0,0,0.15)]">
-            <img src="/app/phone-right-1.png" alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src="app/phone-right-1.png" alt="" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div className="absolute -right-[70px] bottom-[40px] rotate-[19deg] w-[220px] h-[460px] rounded-[24px] border-4 border-[#B496C8] overflow-hidden bg-white shadow-[0_6px_20px_rgba(0,0,0,0.15)]">
-            <img src="/app/phone-right-2.png" alt="" className="w-full h-full object-cover" loading="lazy" />
+            <img src="app/phone-right-2.png" alt="" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
       </div>
 
       {/* Bottom-left friendly blob - positioned relative to the section */}
       <div aria-hidden className="lg:block absolute left-[220px] bottom-[20px] w-[230px] h-[203px] z-[10]">
-        <img src="/app/black_smiling_cloud.svg" alt="" className="w-full h-full object-contain" />
+        <img src="app/black_smiling_cloud.svg" alt="" className="w-full h-full object-contain" />
       </div>
     </section>
   );

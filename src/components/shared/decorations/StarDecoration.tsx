@@ -18,7 +18,7 @@ export default function StarDecoration({
   return (
     <div className={`${sizeClasses[size]} ${className}`}>
       <img 
-        src="/star-vector.svg" 
+        src="star-vector.svg"
         alt="" 
         className="w-full h-full object-contain" 
         loading="lazy" 

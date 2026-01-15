@@ -7,7 +7,7 @@ export default function Hero() {
       {/* Decorative star/burst on the left */}
       <div className="absolute left-0 top-0 w-[207px] h-[220px] md:w-[300px] md:h-[320px] lg:w-[436px] lg:h-[464px] pointer-events-none opacity-80 md:opacity-100">
         <img 
-          src="/star-vector.svg" 
+          src="star-vector.svg"
           alt="" 
           className="w-full h-full object-contain"
         />
@@ -18,18 +18,18 @@ export default function Hero() {
         <div 
           className="absolute inset-0"
           style={{
-            maskImage: 'url(/flower-collage.png)',
+            maskImage: 'url(flower-collage.png)',
             maskSize: 'contain',
             maskPosition: 'center',
             maskRepeat: 'no-repeat',
-            WebkitMaskImage: 'url(/flower-collage.png)',
+            WebkitMaskImage: 'url(flower-collage.png)',
             WebkitMaskSize: 'contain',
             WebkitMaskPosition: 'center',
             WebkitMaskRepeat: 'no-repeat',
           }}
         >
           <img 
-            src="/flower-image.png" 
+            src="flower-image.png"
             alt="" 
             className="w-full h-full object-cover"
           />

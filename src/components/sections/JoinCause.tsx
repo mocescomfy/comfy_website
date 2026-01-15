@@ -9,11 +9,11 @@ export default function JoinCause() {
         <div 
           className="absolute inset-0"
           style={{
-            maskImage: 'url(/star-vector.svg)',
+            maskImage: 'url(star-vector.svg)',
             maskSize: 'contain',
             maskPosition: 'center',
             maskRepeat: 'no-repeat',
-            WebkitMaskImage: 'url(/star-vector.svg)',
+            WebkitMaskImage: 'url(star-vector.svg)',
             WebkitMaskSize: 'contain',
             WebkitMaskPosition: 'center',
             WebkitMaskRepeat: 'no-repeat',
@@ -27,11 +27,11 @@ export default function JoinCause() {
         <div 
           className="absolute inset-0"
           style={{
-            maskImage: 'url(/flower-collage.png)',
+            maskImage: 'url(flower-collage.png)',
             maskSize: 'contain',
             maskPosition: 'center',
             maskRepeat: 'no-repeat',
-            WebkitMaskImage: 'url(/flower-collage.png)',
+            WebkitMaskImage: 'url(flower-collage.png)',
             WebkitMaskSize: 'contain',
             WebkitMaskPosition: 'center',
             WebkitMaskRepeat: 'no-repeat',
@@ -72,7 +72,7 @@ export default function JoinCause() {
                     <span className="flex-shrink-0 w-[17px] h-[17px] flex items-center justify-center mt-[6px] mr-[19px] ml-[30.5px]">
                       {/* Using tiny_pink_cloud.svg - can be replaced with bullet-star-icon.svg from Figma */}
                       <img 
-                        src="/app/tiny_pink_cloud.svg" 
+                        src="app/tiny_pink_cloud.svg"
                         alt="" 
                         className="w-full h-full object-contain"
                         style={{ filter: 'hue-rotate(-30deg) saturate(1.5) brightness(0.85)' }}
@@ -84,7 +84,7 @@ export default function JoinCause() {
                   <li className="flex items-start mt-[32px]">
                     <span className="flex-shrink-0 w-[17px] h-[17px] flex items-center justify-center mt-[6px] mr-[19px] ml-[30.5px]">
                       <img 
-                        src="/app/tiny_pink_cloud.svg" 
+                        src="app/tiny_pink_cloud.svg"
                         alt="" 
                         className="w-full h-full object-contain"
                         style={{ filter: 'hue-rotate(-30deg) saturate(1.5) brightness(0.85)' }}
@@ -96,7 +96,7 @@ export default function JoinCause() {
                   <li className="flex items-start mt-[64px]">
                     <span className="flex-shrink-0 w-[17px] h-[17px] flex items-center justify-center mt-[6px] mr-[19px] ml-[30.5px]">
                       <img 
-                        src="/app/tiny_pink_cloud.svg" 
+                        src="app/tiny_pink_cloud.svg"
                         alt="" 
                         className="w-full h-full object-contain"
                         style={{ filter: 'hue-rotate(-30deg) saturate(1.5) brightness(0.85)' }}
@@ -150,28 +150,28 @@ export default function JoinCause() {
               {/* For now, creating individual icon placeholders */}
               <a href="#" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Facebook">
                 <img 
-                  src="/app/facebookicon.svg" 
+                  src="app/facebookicon.svg"
                   alt="Facebook" 
                   className="w-full h-full object-contain"
                 />
               </a>
               <a href="#" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram">
                 <img 
-                  src="/app/instagramicon.svg" 
+                  src="app/instagramicon.svg"
                   alt="Instagram" 
                   className="w-full h-full object-contain"
                 />
               </a>
               <a href="#" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="LinkedIn">
                 <img 
-                  src="/app/linkedinicon.svg" 
+                  src="app/linkedinicon.svg"
                   alt="LinkedIn" 
                   className="w-full h-full object-contain"
                 />
               </a>
               <a href="#" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="TikTok">
                 <img 
-                  src="/app/tiktokicon.svg" 
+                  src="app/tiktokicon.svg"
                   alt="TikTok" 
                   className="w-full h-full object-contain"
                 />

@@ -20,7 +20,7 @@ export default function PinkBlobDecoration({
     >
       <div className="relative w-full h-full">
         <img 
-          src="/app/pink-blob-contribute.svg" 
+          src="app/pink-blob-contribute.svg"
           alt="" 
           className="w-full h-full object-contain" 
           loading="lazy" 

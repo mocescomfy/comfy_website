@@ -5,7 +5,7 @@ export default function Transparency() {
     <section id="transparencia" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6] overflow-x-visible">
       {/* Background noise radial SVG with aqua gradient */}
       <div aria-hidden className="absolute inset-0 pointer-events-none">
-        <img src="/project-bg.svg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="project-bg.svg" alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div 
           className="absolute inset-0 w-full h-full"
           style={{

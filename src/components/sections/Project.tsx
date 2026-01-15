@@ -6,7 +6,7 @@ export default function Project() {
     <section id="projeto" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6]">
       {/* Background noise radial SVG */}
       <div aria-hidden className="absolute inset-0 pointer-events-none">
-        <img src="/project-bg.svg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="project-bg.svg" alt="" className="absolute inset-0 w-full h-full object-cover" />
       </div>
       <div className="container-responsive relative z-10">
         {/* Row 1: Title and badge */}
@@ -30,7 +30,7 @@ export default function Project() {
           <div className="justify-self-start">
             <div className="relative inline-block rotate-[345deg]">
               <div className="relative w-[320px] h-[200px] md:w-[420px] md:h-[260px] lg:w-[485px] lg:h-[300px] rounded-[24px] border-4 border-[#BEC864] bg-white shadow-[0_4px_20px_rgba(180,150,200,0.3)] overflow-hidden">
-                <img src="/project-media.png" alt="Imagem ilustrativa do projeto Zona De(s)conforto" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                <img src="project-media.png" alt="Imagem ilustrativa do projeto Zona De(s)conforto" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
               </div>
               {/* Play badge (non-functional) */}
               <div className="absolute -right-6 -bottom-10 w-[96px] h-[96px] md:w-[112px] md:h-[112px] lg:w-[128px] lg:h-[128px] rounded-full bg-white border-4 border-[#d28cb4] shadow-[0_6px_20px_rgba(0,0,0,0.15)] grid place-items-center select-none" aria-hidden>

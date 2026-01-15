@@ -50,7 +50,7 @@ export default function Footer() {
           <div className="flex justify-center items-center">
             <div className="h-12 w-auto">
               <img 
-                src="/footer/funding-logos.svg" 
+                src="footer/funding-logos.svg"
                 alt="ALGARVE 2030, PORTUGAL 2030, Cofinanciado pela União Europeia" 
                 className="h-full w-auto object-contain"
                 loading="lazy"

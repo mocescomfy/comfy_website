@@ -30,13 +30,13 @@ export default function Contribute() {
               <ul className="space-y-4  text-base md:text-lg text-[#111827] mb-8 bg-[#FAF0E6] rounded-[20px] p-4">
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
-                    <img src="/app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
+                    <img src="app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
                   </span>
                   <span>Clique no botão abaixo para fazer uma doação</span>
                 </li>
                 <li className="flex items-start gap-4">
                   <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
-                    <img src="/app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
+                    <img src="app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
                   </span>
                   <span>Escolha o valor que deseja contribuir e faça a sua parte na transformação da vida de jovens em Olhão.</span>
                 </li>

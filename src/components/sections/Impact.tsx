@@ -25,19 +25,19 @@ export default function Impact() {
               <ul className="space-y-4 text-base md:text-lg text-[#111827]">
                 <li className="flex items-start gap-4 font-bold">
                   <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
-                    <img src="/app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
+                    <img src="app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
                   </span>
                   <span>Desenvolver e melhorar a tecnologia da app</span>
                 </li>
                 <li className="flex items-start gap-4 font-bold">
                   <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
-                    <img src="/app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
+                    <img src="app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
                   </span>
                   <span>Promover a app em escolas e centros comunitários</span>
                 </li>
                 <li className="flex items-start gap-4 font-bold">
                   <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
-                    <img src="/app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
+                    <img src="app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
                   </span>
                   <span>Formar facilitadores especializados em saúde mental</span>
                 </li>
@@ -55,7 +55,7 @@ export default function Impact() {
           <div className="relative block md:hidden min-h-[350px]">
             {/* Person photo in cloud shape - centered on mobile */}
             <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[250px] h-[200px]">
-              <img src="/app/cloud_kneeling_phone.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
+              <img src="app/cloud_kneeling_phone.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
             </div>
 
             {/* Callout box - positioned overlapping with cloud photo on mobile */}
@@ -67,7 +67,7 @@ export default function Impact() {
 
             {/* Purple smiling character - bottom center on mobile */}
             <div className="absolute left-1/2 -translate-x-1/2 top-[240px] w-[100px] h-[125px] z-10">
-              <img src="/app/pink_square_pants.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
+              <img src="app/pink_square_pants.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
             </div>
           </div>
 
@@ -75,7 +75,7 @@ export default function Impact() {
           <div className="relative hidden md:block lg:hidden min-h-[400px]">
             {/* Person photo in cloud shape - centered on tablet */}
             <div className="absolute md:left-[340px] md:w-[300px] md:right-auto top-[-15px]">
-              <img src="/app/cloud_kneeling_phone.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
+              <img src="app/cloud_kneeling_phone.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
             </div>
 
             {/* Callout box - positioned overlapping with cloud photo on tablet */}
@@ -87,7 +87,7 @@ export default function Impact() {
 
             {/* Purple smiling character - bottom center on tablet */}
             <div className="absolute md:left-1/2 md:-translate-x-1/2 md:right-auto md:top-[280px] md:w-[120px] md:h-[150px] z-10">
-              <img src="/app/pink_square_pants.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
+              <img src="app/pink_square_pants.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
             </div>
           </div>
 
@@ -95,7 +95,7 @@ export default function Impact() {
           <div className="relative hidden lg:block min-h-[600px]">
             {/* Person photo in cloud shape - upper right */}
             <div className="absolute lg:right-[-180px] top-0 lg:w-[380px] lg:h-[300px]">
-              <img src="/app/cloud_kneeling_phone.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
+              <img src="app/cloud_kneeling_phone.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
             </div>
 
             {/* Callout box - positioned overlapping with cloud photo */}
@@ -107,7 +107,7 @@ export default function Impact() {
 
             {/* Purple smiling character - bottom right, overlapping with callout */}
             <div className="absolute lg:right-[40px] lg:top-[350px] lg:w-[160px] lg:h-[200px] z-10">
-              <img src="/app/pink_square_pants.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
+              <img src="app/pink_square_pants.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
             </div>
           </div>
 
