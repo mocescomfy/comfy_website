@@ -57,9 +57,10 @@ export default function Transparency() {
           <div className="relative inline-block rotate-[5deg] z-20" style={{ marginLeft: '-20px', marginRight: '-20px' }}>
             <div className="relative w-80 h-52 lg:w-80 lg:h-52 rounded-[24px] border-4 border-[#FAF0E6] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.1)]">
               <img 
-                src="https://www.figma.com/api/mcp/asset/90a4ef92-d192-4a6e-b150-7b222cd3849a" 
+                src="foto2.png" 
                 alt="Participante do projeto Zona De(s)conforto" 
                 className="absolute inset-0 w-full h-full object-cover"
+                style={{ objectPosition: '50% 35%' }}
                 loading="lazy"
               />
             </div>
@@ -70,14 +71,14 @@ export default function Transparency() {
             <div className="relative w-80 h-52 lg:w-80 lg:h-52 rounded-[24px] border-4 border-[#FAF0E6] overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.1)]">
               <div className="absolute inset-0">
                 <img 
-                  src="https://www.figma.com/api/mcp/asset/98c4fc12-cc66-4317-8f2e-0199e5591cf9" 
+                  src="foto3.png" 
                   alt="" 
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
                   aria-hidden="true"
                 />
                 <img 
-                  src="https://www.figma.com/api/mcp/asset/dedfc543-48da-4cd5-878c-c487f9d54eaa" 
+                  src="foto3.png" 
                   alt="Atividade colaborativa do projeto Zona De(s)conforto" 
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
