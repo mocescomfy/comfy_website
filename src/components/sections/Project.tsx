@@ -59,7 +59,7 @@ export default function Project() {
               <DonateButton
                 text="SAIBA MAIS SOBRE O PROJETO"
                 showFace={false}
-                onClick={() => {}}
+                href="https://www.instagram.com/the.comfy.app/"
               />
             </div>
           </div>
