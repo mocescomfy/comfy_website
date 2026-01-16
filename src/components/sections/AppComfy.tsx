@@ -45,7 +45,7 @@ export default function AppComfy() {
               <DonateButton
                 text="CONHEÇA A APP COMFY"
                 showFace={false}
-                onClick={() => {}}
+                href="https://www.instagram.com/the.comfy.app/"
               />
             </div>
           </div>
