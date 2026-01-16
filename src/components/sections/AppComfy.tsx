@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../shared/Button';
+import DonateButton from '../shared/DonateButton';
 
 export default function AppComfy() {
   return (
@@ -40,12 +40,13 @@ export default function AppComfy() {
               A app Comfy foi desenhada para ajudar os jovens a desenvolverem as suas competências emocionais, melhorar a autoestima e aumentar a resiliência de maneira gratuita. Através de conteúdos interativos e ferramentas adaptadas, os jovens terão o apoio necessário para enfrentar situações de stress, ansiedade e outros desafios emocionais, promovendo um equilíbrio psicológico saudável.
             </p>
 
-            {/* Layered CTA */}
-            <div className="relative h-16 md:h-20 w-[300px] md:w-[380px] lg:w-[397px] mt-2">
-              <div className="absolute left-1/2 top-1/2 -translate-x-[calc(50%-4px)] -translate-y-[calc(50%-4px)] bg-black border-4 border-black rounded-[24px] px-8 md:px-10 py-4 md:py-6" aria-hidden />
-              <Button variant="secondary" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 border-4 border-black rounded-[24px] !px-10 !py-6 uppercase text-[16px] md:text-[20px] lg:text-[24px] w-full whitespace-nowrap">
-                CONHEÇA A APP COMFY
-              </Button>
+            {/* CTA */}
+            <div className="mt-2">
+              <DonateButton
+                text="CONHEÇA A APP COMFY"
+                showFace={false}
+                onClick={() => {}}
+              />
             </div>
           </div>
         </div>

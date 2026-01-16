@@ -1,5 +1,6 @@
 import React from 'react';
 import projectImg from '../../assets/zonadesconforto.png';
+import DonateButton from '../shared/DonateButton';
 
 export default function Project() {
   return (
@@ -53,19 +54,13 @@ export default function Project() {
               </p>
             </div>
 
-            {/* Layered CTA (non-functional) */}
+            {/* CTA */}
             <div className="relative h-20 w-[320px] md:w-[420px] lg:w-[430px]">
-              <div 
-                className="absolute left-1/2 top-1/2 px-10 py-6 rounded-[24px] border-4 border-black bg-black"
-                style={{ transform: 'translate(calc(-50% + 6px), calc(-50% + 6px))' }}
-                aria-hidden
+              <DonateButton
+                text="SAIBA MAIS SOBRE O PROJETO"
+                showFace={false}
+                onClick={() => {}}
               />
-              <button 
-                aria-disabled 
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#d7d7aa] px-10 py-6 rounded-[24px] border-4 border-black font-semibold text-[14px] md:text-[16px] lg:text-[16px] uppercase text-black whitespace-nowrap"
-              >
-                SAIBA MAIS SOBRE O PROJETO
-              </button>
             </div>
           </div>
         </div>
