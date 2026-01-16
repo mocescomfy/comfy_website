@@ -149,31 +149,31 @@ export default function JoinCause() {
             <div className="h-[48px] md:h-[56px] lg:h-[64px] w-[240px] md:w-[272px] lg:w-[304px] flex items-center justify-center gap-4">
               {/* Placeholder social icons - will be replaced with actual SVG asset */}
               {/* For now, creating individual icon placeholders */}
-              <a href="#" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Facebook">
-                <img 
+              <a href="https://www.facebook.com/associacao.moces" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Facebook">
+                <img
                   src="app/facebookicon.svg"
-                  alt="Facebook" 
+                  alt="Facebook"
                   className="w-full h-full object-contain"
                 />
               </a>
-              <a href="#" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram">
-                <img 
+              <a href="https://www.instagram.com/moces.pt/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram">
+                <img
                   src="app/instagramicon.svg"
-                  alt="Instagram" 
+                  alt="Instagram"
                   className="w-full h-full object-contain"
                 />
               </a>
-              <a href="#" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="LinkedIn">
-                <img 
+              <a href="https://www.linkedin.com/company/associacaomoces/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="LinkedIn">
+                <img
                   src="app/linkedinicon.svg"
-                  alt="LinkedIn" 
+                  alt="LinkedIn"
                   className="w-full h-full object-contain"
                 />
               </a>
-              <a href="#" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="TikTok">
-                <img 
+              <a href="https://www.tiktok.com/@the.comfy.app" target="_blank" rel="noopener noreferrer" className="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="TikTok">
+                <img
                   src="app/tiktokicon.svg"
-                  alt="TikTok" 
+                  alt="TikTok"
                   className="w-full h-full object-contain"
                 />
               </a>
