@@ -131,6 +131,8 @@ export default function JoinCause() {
               <Button
                 variant="secondary"
                 href="https://gofund.me/5eb16f31a"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="!rounded-[24px] !bg-[#D7D7AA] !border-4 !border-black !px-[40px] !py-[24px] !font-fredoka font-semibold !text-[20px] md:!text-[22px] lg:!text-[24px] !leading-none !uppercase !whitespace-nowrap !text-black hover:!bg-[#D7D7AA] hover:!translate-x-1 hover:!translate-y-1 active:!translate-x-1 active:!translate-y-1 !shadow-none transition-all duration-200"
               >
                 PARTICIPE E FAÇA A DIFERENÇA!

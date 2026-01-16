@@ -7,15 +7,19 @@ interface ButtonProps {
   href?: string;
   className?: string;
   type?: 'button' | 'submit' | 'reset';
+  target?: string;
+  rel?: string;
 }
 
-export default function Button({ 
-  variant = 'primary', 
-  children, 
+export default function Button({
+  variant = 'primary',
+  children,
   onClick,
   href,
   className = '',
-  type = 'button'
+  type = 'button',
+  target,
+  rel
 }: ButtonProps) {
   const baseClasses = "rounded-full px-8 py-4 font-semibold transition-all duration-300 inline-block text-center cursor-pointer";
   
@@ -28,7 +32,7 @@ export default function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes}>
+      <a href={href} className={classes} target={target} rel={rel}>
         {children}
       </a>
     );
