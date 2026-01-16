@@ -85,32 +85,37 @@ export default function Navbar() {
 
       {/* Mobile Menu Items (full-screen overlay) */}
       {isMenuOpen && (
-        <ul className="md:hidden fixed inset-0 bg-gradient-to-r from-purple-500 to-purple-600 backdrop-blur-xl flex flex-col justify-center items-center gap-4 p-8 z-[1000]">
-          {navItems.map((item, index) => (
-            <li key={index} className="w-full text-center">
-              <a
-                href={item.href}
-                className="block py-4 px-4 text-lg font-semibold leading-none uppercase w-full text-white rounded-lg transition-all duration-300 hover:bg-[#BEC864] hover:text-[#111827]"
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleNavClick(item.href);
-                }}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="lg:hidden fixed inset-0 bg-gradient-to-r from-purple-500 to-purple-600 backdrop-blur-xl flex flex-col justify-center items-center p-8 z-[1000]">
+          {/* Close button */}
+          <button
+            onClick={closeMenu}
+            className="absolute top-6 right-6 w-12 h-12 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/30 transition-colors"
+            aria-label="Fechar menu"
+          >
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          <ul className="flex flex-col justify-center items-center gap-4 w-full">
+            {navItems.map((item, index) => (
+              <li key={index} className="w-full text-center">
+                <a
+                  href={item.href}
+                  className="block py-4 px-4 text-lg font-semibold leading-none uppercase w-full text-white rounded-lg transition-all duration-300 hover:bg-[#BEC864] hover:text-[#111827]"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(item.href);
+                  }}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
 
-      {/* Mobile Menu Overlay */}
-      {isMenuOpen && (
-        <div 
-          className="fixed inset-0 bg-black/50 z-[999] md:hidden"
-          onClick={closeMenu}
-          aria-hidden="true"
-        />
-      )}
     </nav>
   );
 }
