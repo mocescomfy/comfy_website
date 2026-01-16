@@ -16,22 +16,14 @@ const navItems: NavItem[] = [
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  // Handle scroll effect for navbar background
+  // Support external toggle events from LogoZone
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    // Support external toggle events from LogoZone
     const externalToggle = () => setIsMenuOpen((v) => !v);
     const externalClose = () => setIsMenuOpen(false);
     window.addEventListener('toggle-menu', externalToggle as EventListener);
     window.addEventListener('close-menu', externalClose as EventListener);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('toggle-menu', externalToggle as EventListener);
       window.removeEventListener('close-menu', externalClose as EventListener);
     };
@@ -58,9 +50,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={`relative w-full z-[1000] transition-all duration-300 py-4 ${
-      isScrolled ? 'bg-white/98 backdrop-blur-xl shadow-[0_2px_20px_rgba(0,0,0,0.1)]' : 'bg-transparent'
-    }`}>
+    <nav className="relative w-full z-[1000] py-4 bg-transparent">
       <div className="hidden lg:flex justify-center max-w-[1200px] mx-auto px-8">
         <div className={`bg-[#B496C8] rounded-[80px] h-[51px] px-10 flex items-center shadow-[0_4px_20px_rgba(180,150,200,0.3)]`}>
           {/* Desktop Navigation */}
