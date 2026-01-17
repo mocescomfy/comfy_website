@@ -12,8 +12,8 @@ export default function Contribute() {
         <div className="flex flex-col gap-16 lg:flex-row lg:gap-16" style={{ gap: '4em' }}>
           
           {/* Star decoration - top-left, contained within */}
-          <StarDecoration 
-              className="absolute top-[-20px] left-50 z-100" 
+          <StarDecoration
+              className="absolute top-[-40px] left-[20px] z-0"
               size="lg"
             />
           {/* LEFT/TOP: How to Help - 2/3 width */}

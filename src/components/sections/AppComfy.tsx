@@ -10,7 +10,7 @@ export default function AppComfy() {
       </div>
 
       {/* Left phone mockups */}
-      <div aria-hidden className="absolute -left-[60px] md:-left-[40px] lg:left-[72px] top-[0px] z-[10]">
+      <div aria-hidden className="absolute -left-[60px] md:-left-[40px] lg:left-[20px] top-[0px] z-[10]">
         <div className="relative w-[160px] h-[300px] md:w-[220px] md:h-[410px] lg:w-[280px] lg:h-[520px]">
           <div className="absolute left-6 md:left-10 top-[40px] md:top-[72px] rotate-[-7deg] w-[120px] h-[250px] md:w-[170px] md:h-[360px] lg:w-[220px] lg:h-[460px] rounded-[16px] md:rounded-[20px] lg:rounded-[24px] border-2 md:border-4 border-[#B496C8] overflow-hidden bg-white shadow-[0_6px_20px_rgba(0,0,0,0.15)]">
             <img src="app/phone-left-1.png" alt="" className="w-full h-full object-cover" loading="lazy" />
