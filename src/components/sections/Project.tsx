@@ -20,7 +20,7 @@ export default function Project() {
               <span className="font-bold">Zona De(s)conforto</span> é um projeto premiado apoiado pelo <span className="font-bold">Portugal Inovação Social</span>, criado pela <span className="font-bold">MOCES</span>. A sua missão é promover a saúde mental entre jovens dos 12 aos 18 anos, através de uma combinação de atividades presenciais nas escolas e uma app inovadora e gratuita (a App Comfy). O projeto oferece um espaço seguro para o desenvolvimento de competências emocionais, o aumento da autoestima e a construção de resiliência para enfrentar os desafios da vida.
             </p>
           </div>
-          <div className="shrink-0 w-[160px] h-[160px] md:w-[220px] md:h-[220px] lg:w-[320px] lg:h-[320px] rounded-full overflow-hidden">
+          <div className="hidden md:block shrink-0 md:w-[220px] md:h-[220px] lg:w-[320px] lg:h-[320px] rounded-full overflow-hidden">
             <img src={projectImg.src} alt="Logótipo Zona De(s)conforto" className="w-full h-full object-cover" loading="lazy" />
           </div>
         </div>
