@@ -45,14 +45,31 @@ When creating issues:
 
 When picking up a task that involves code changes:
 
-1. **Start the dev server** (`npm run dev`) in the background
-2. **Open a browser** and navigate to the relevant section
-3. **Set the appropriate viewport** for the issue (430px mobile, 768px tablet, 1440px desktop)
-4. **Take a "before" screenshot** to document the issue
-5. **Make the code changes**
-6. **Refresh and verify** the fix in the browser
-7. **Take an "after" screenshot** to confirm the fix
-8. **Test other viewports** to ensure no regressions
-9. **Kill the dev server** and commit the changes
+1. **Make the code changes**
+2. **Spawn a testing subagent** to verify the changes (saves context)
+3. **Review the subagent's report** (pass/fail + summary)
+4. **Commit** once verified
 
-This ensures all changes are visually verified before committing.
+### Testing Subagent Instructions
+
+When verifying changes, spawn a `general-purpose` subagent with this prompt:
+
+```
+Verify the fix for [issue description]:
+
+1. Start dev server: `npm run dev` (background)
+2. Open browser and navigate to [section/URL]
+3. Test these viewports:
+   - Mobile: 430px width
+   - Tablet: 768px width (if relevant)
+   - Desktop: 1440px width (if relevant)
+4. Take screenshots at each viewport
+5. Kill the dev server
+
+Report back:
+- PASS/FAIL for each viewport
+- Screenshot summary (what you observed)
+- Any regressions or issues found
+```
+
+This keeps browser interactions and screenshots out of the main context.
