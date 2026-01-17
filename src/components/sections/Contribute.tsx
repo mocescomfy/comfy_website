@@ -8,9 +8,10 @@ import FundraisingGoal from './FundraisingGoal';
 export default function Contribute() {
   return (
     <section id="contribuir" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24">
-      <div className="container-responsive">
+      {/* Max-width wrapper to contain decorative elements on wide screens */}
+      <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16">
         <div className="flex flex-col gap-16 lg:flex-row lg:gap-16" style={{ gap: '4em' }}>
-          
+
           {/* Star decoration - top-left, contained within */}
           <StarDecoration
               className="absolute top-[-40px] left-[20px] z-0"

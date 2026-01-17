@@ -4,43 +4,45 @@ import Button from '../shared/Button';
 export default function JoinCause() {
   return (
     <section id="causa" className="relative w-full overflow-hidden py-16 md:py-20 lg:py-24">
-      {/* Left decorative star - similar to Hero.tsx pattern, cream/hummus color */}
-      <div className="absolute left-0 top-[7px] w-[207px] h-[220px] md:w-[300px] md:h-[320px] lg:w-[436px] lg:h-[464px] pointer-events-none opacity-80 md:opacity-100">
-        <div 
-          className="absolute inset-0"
-          style={{
-            maskImage: 'url(star-vector.svg)',
-            maskSize: 'contain',
-            maskPosition: 'center',
-            maskRepeat: 'no-repeat',
-            WebkitMaskImage: 'url(star-vector.svg)',
-            WebkitMaskSize: 'contain',
-            WebkitMaskPosition: 'center',
-            WebkitMaskRepeat: 'no-repeat',
-            backgroundColor: '#D7D7AA', // Cream/hummus color rgba(215, 215, 170, 1)
-          }}
-        />
-      </div>
+      {/* Max-width wrapper to contain decorative elements on wide screens */}
+      <div className="relative max-w-[1440px] mx-auto">
+        {/* Left decorative star - similar to Hero.tsx pattern, cream/hummus color */}
+        <div className="absolute left-0 top-[7px] w-[207px] h-[220px] md:w-[300px] md:h-[320px] lg:w-[436px] lg:h-[464px] pointer-events-none opacity-80 md:opacity-100">
+          <div
+            className="absolute inset-0"
+            style={{
+              maskImage: 'url(star-vector.svg)',
+              maskSize: 'contain',
+              maskPosition: 'center',
+              maskRepeat: 'no-repeat',
+              WebkitMaskImage: 'url(star-vector.svg)',
+              WebkitMaskSize: 'contain',
+              WebkitMaskPosition: 'center',
+              WebkitMaskRepeat: 'no-repeat',
+              backgroundColor: '#D7D7AA', // Cream/hummus color rgba(215, 215, 170, 1)
+            }}
+          />
+        </div>
 
-      {/* Right decorative element - yellow/mustard color */}
-      <div className="absolute right-0 top-[584px] w-[186px] h-[180px] md:w-[300px] md:h-[292px] lg:w-[369px] lg:h-[358px] pointer-events-none opacity-80 md:opacity-100">
-        <div 
-          className="absolute inset-0"
-          style={{
-            maskImage: 'url(flower-collage.png)',
-            maskSize: 'contain',
-            maskPosition: 'center',
-            maskRepeat: 'no-repeat',
-            WebkitMaskImage: 'url(flower-collage.png)',
-            WebkitMaskSize: 'contain',
-            WebkitMaskPosition: 'center',
-            WebkitMaskRepeat: 'no-repeat',
-            backgroundColor: '#E6B41E', // Mustard yellow rgba(230, 180, 30, 1)
-          }}
-        />
-      </div>
+        {/* Right decorative element - yellow/mustard color */}
+        <div className="absolute right-0 top-[584px] w-[186px] h-[180px] md:w-[300px] md:h-[292px] lg:w-[369px] lg:h-[358px] pointer-events-none opacity-80 md:opacity-100">
+          <div
+            className="absolute inset-0"
+            style={{
+              maskImage: 'url(flower-collage.png)',
+              maskSize: 'contain',
+              maskPosition: 'center',
+              maskRepeat: 'no-repeat',
+              WebkitMaskImage: 'url(flower-collage.png)',
+              WebkitMaskSize: 'contain',
+              WebkitMaskPosition: 'center',
+              WebkitMaskRepeat: 'no-repeat',
+              backgroundColor: '#E6B41E', // Mustard yellow rgba(230, 180, 30, 1)
+            }}
+          />
+        </div>
 
-      {/* Main container - centered with 80px border radius, lavender background */}
+        {/* Main container - centered with 80px border radius, lavender background */}
       <div className="relative mx-auto w-[calc(100%-32px)] max-w-[366px] md:max-w-[600px] lg:max-w-[800px] bg-[#B496C8] rounded-[40px] md:rounded-[60px] lg:rounded-[80px] pt-[120px] pb-16 md:pb-20 lg:pb-24 px-4 md:px-8 lg:px-16 overflow-hidden">
         {/* Content container - 752px max width */}
         <div className="max-w-[752px] mx-auto flex flex-col gap-[48px] items-center">
@@ -182,6 +184,7 @@ export default function JoinCause() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
