@@ -9,8 +9,8 @@ export default function AppComfy() {
         <img src="app/greencloud-top.svg" alt="" className="w-full h-full object-contain" />
       </div>
 
-      {/* Left phone mockups */}
-      <div aria-hidden className="absolute -left-[60px] md:-left-[140px] lg:left-[20px] top-[0px] z-[10]">
+      {/* Left phone mockups - hidden on mobile per Figma */}
+      <div aria-hidden className="hidden md:block absolute -left-[60px] md:-left-[140px] lg:left-[20px] top-[0px] z-[10]">
         <div className="relative w-[160px] h-[300px] md:w-[220px] md:h-[410px] lg:w-[280px] lg:h-[520px]">
           <div className="absolute left-6 md:left-10 top-[40px] md:top-[72px] rotate-[-7deg] w-[120px] h-[250px] md:w-[170px] md:h-[360px] lg:w-[220px] lg:h-[460px] rounded-[16px] md:rounded-[20px] lg:rounded-[24px] border-2 md:border-4 border-[#B496C8] overflow-hidden bg-white shadow-[0_6px_20px_rgba(0,0,0,0.15)]">
             <img src="app/phone-left-1.png" alt="" className="w-full h-full object-cover" loading="lazy" />
@@ -53,8 +53,8 @@ export default function AppComfy() {
         </div>
       </div>
 
-      {/* Right phone mockups */}
-      <div aria-hidden className="absolute -right-[40px] md:-right-[120px] lg:right-[72px] bottom-[60px] md:bottom-[40px] lg:bottom-[32px] z-[10]">
+      {/* Right phone mockups - hidden on mobile per Figma */}
+      <div aria-hidden className="hidden md:block absolute -right-[40px] md:-right-[120px] lg:right-[72px] bottom-[60px] md:bottom-[40px] lg:bottom-[32px] z-[10]">
         <div className="relative w-[160px] h-[300px] md:w-[220px] md:h-[410px] lg:w-[280px] lg:h-[520px]">
           <div className="absolute right-0 bottom-0 rotate-[10deg] w-[120px] h-[250px] md:w-[170px] md:h-[360px] lg:w-[220px] lg:h-[460px] rounded-[16px] md:rounded-[20px] lg:rounded-[24px] border-2 md:border-4 border-[#B496C8] overflow-hidden bg-white shadow-[0_6px_20px_rgba(0,0,0,0.15)]">
             <img src="app/phone-right-1.png" alt="" className="w-full h-full object-cover" loading="lazy" />
