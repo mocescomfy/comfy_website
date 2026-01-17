@@ -52,21 +52,21 @@ export default function Impact() {
           </div>
 
           {/* RIGHT COLUMN: Visual Elements and Callout - Mobile */}
-          <div className="relative block md:hidden min-h-[350px]">
-            {/* Person photo in cloud shape - centered on mobile */}
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 w-[250px] h-[200px]">
+          <div className="relative block md:hidden min-h-[380px]">
+            {/* Person photo in flower shape - positioned right on mobile (matching Figma) */}
+            <div className="absolute right-[-20px] top-0 w-[220px] h-[180px]">
               <img src="app/cloud_kneeling_phone.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
             </div>
 
-            {/* Callout box - positioned overlapping with cloud photo on mobile */}
-            <div className="absolute top-[100px] w-[200px] left-1/2 -translate-x-1/2 text-center bg-[#A0D2B4] rounded-[20px] p-4 z-5">
+            {/* Callout box - positioned overlapping from left side (matching Figma) */}
+            <div className="absolute top-[80px] left-[10px] w-[200px] text-center bg-[#A0D2B4] rounded-[20px] p-4 z-5">
               <p className="text-xs text-[#111827]">
                 A app vai ajudar os jovens a melhorar a sua saúde mental, a sua autoestima e a se sentirem mais conectados
               </p>
             </div>
 
-            {/* Purple smiling character - bottom center on mobile */}
-            <div className="absolute left-1/2 -translate-x-1/2 top-[240px] w-[100px] h-[125px] z-10">
+            {/* Purple smiling character - bottom right on mobile (matching Figma) */}
+            <div className="absolute right-[60px] top-[220px] w-[112px] h-[140px] z-10">
               <img src="app/pink_square_pants.svg" alt="" className="w-full h-full object-contain" loading="lazy" />
             </div>
           </div>
