@@ -41,7 +41,7 @@ export default function JoinCause() {
       </div>
 
       {/* Main container - centered with 80px border radius, lavender background */}
-      <div className="relative mx-auto w-[800px] bg-[#B496C8] rounded-[40px] md:rounded-[60px] lg:rounded-[80px] pt-[120px] pb-16 md:pb-20 lg:pb-24 px-4 md:px-8 lg:px-16 overflow-hidden">
+      <div className="relative mx-auto w-[calc(100%-32px)] max-w-[366px] md:max-w-[600px] lg:max-w-[800px] bg-[#B496C8] rounded-[40px] md:rounded-[60px] lg:rounded-[80px] pt-[120px] pb-16 md:pb-20 lg:pb-24 px-4 md:px-8 lg:px-16 overflow-hidden">
         {/* Content container - 752px max width */}
         <div className="max-w-[752px] mx-auto flex flex-col gap-[48px] items-center">
           
