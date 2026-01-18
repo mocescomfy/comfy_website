@@ -29,7 +29,7 @@ export default function AppComfy() {
           <div className="relative z-[2] max-w-[946px] mx-auto flex flex-col items-center gap-8 z-[1000]">
             {/* Title */}
             <div className="flex items-end justify-center gap-3">
-              <h2 className="font-semibold text-black text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08]">A App</h2>
+              <h2 className="font-semibold text-black text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08] whitespace-nowrap">A App</h2>
               <span className="h-[46px] md:h-[58px] lg:h-[74px] inline-block">
                 <img src="app/greencloud.svg" alt="" className="h-full w-auto" />
               </span>
