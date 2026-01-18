@@ -3,15 +3,30 @@ import React from 'react';
 export default function Transparency() {
   return (
     <section id="transparencia" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6] overflow-x-visible">
-      {/* Background noise radial SVG with aqua gradient */}
-      <div aria-hidden className="absolute inset-0 pointer-events-none">
-        <img src="project-bg.svg" alt="" className="absolute inset-0 w-full h-full object-cover" />
-        <div 
+      {/* Background with CSS radial gradient (scales to any viewport) + noise texture */}
+      <div aria-hidden className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* CSS radial gradient for aqua color - scales properly at all viewport sizes */}
+        <div
           className="absolute inset-0 w-full h-full"
           style={{
-            background: 'radial-gradient(70.32% 50% at 50% 50%, #A0D2B4 0%, rgba(250, 240, 230, 0.00) 100%)'
+            background: 'radial-gradient(ellipse 70% 50% at 50% 50%, #A0D2B4 0%, rgba(250, 240, 230, 0) 100%)'
           }}
         />
+        {/* Noise texture overlay using inline SVG filter */}
+        <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
+          <defs>
+            <filter id="transparencyNoise" x="0" y="0" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="3" result="noise" seed="2"/>
+              <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"/>
+              <feComponentTransfer in="alphaNoise" result="coloredNoise">
+                <feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+              </feComponentTransfer>
+              <feFlood floodColor="rgba(0, 0, 0, 0.25)" result="colorFlood"/>
+              <feComposite operator="in" in2="coloredNoise" in="colorFlood" result="coloredNoiseFinal"/>
+            </filter>
+          </defs>
+          <rect width="100%" height="100%" filter="url(#transparencyNoise)" fill="transparent"/>
+        </svg>
       </div>
       <div className="container-responsive max-w-[752px] relative z-10">
         <h2 className="font-semibold text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08] text-black text-center mb-8">

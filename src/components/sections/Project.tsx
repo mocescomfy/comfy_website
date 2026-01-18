@@ -5,9 +5,30 @@ import DonateButton from '../shared/DonateButton';
 export default function Project() {
   return (
     <section id="projeto" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6]">
-      {/* Background noise radial SVG */}
-      <div aria-hidden className="absolute inset-0 pointer-events-none">
-        <img src="project-bg.svg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+      {/* Background with CSS radial gradient (scales to any viewport) + noise texture */}
+      <div aria-hidden className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* CSS radial gradient - scales properly at all viewport sizes */}
+        <div
+          className="absolute inset-0 w-full h-full"
+          style={{
+            background: 'radial-gradient(ellipse 100% 50% at 50% 50%, #D28CB4 0%, rgba(250, 240, 230, 0) 100%)'
+          }}
+        />
+        {/* Noise texture overlay using inline SVG filter */}
+        <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none">
+          <defs>
+            <filter id="projectNoise" x="0" y="0" width="100%" height="100%">
+              <feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="3" result="noise" seed="2"/>
+              <feColorMatrix in="noise" type="luminanceToAlpha" result="alphaNoise"/>
+              <feComponentTransfer in="alphaNoise" result="coloredNoise">
+                <feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"/>
+              </feComponentTransfer>
+              <feFlood floodColor="rgba(0, 0, 0, 0.25)" result="colorFlood"/>
+              <feComposite operator="in" in2="coloredNoise" in="colorFlood" result="coloredNoiseFinal"/>
+            </filter>
+          </defs>
+          <rect width="100%" height="100%" filter="url(#projectNoise)" fill="transparent"/>
+        </svg>
       </div>
       <div className="container-responsive relative z-10">
         {/* Row 1: Title and badge */}
