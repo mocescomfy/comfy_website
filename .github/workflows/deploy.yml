@@ -23,9 +23,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-env:
-  DEPLOY_TARGET: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.deploy_target || 'both' }}
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,7 +31,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Pages
-        if: ${{ env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'pages' }}
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'pages' }}
         uses: actions/configure-pages@v5
 
       - name: Setup Node
@@ -47,7 +44,7 @@ jobs:
         run: npm ci
 
       - name: Determine base path and site
-        if: ${{ env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'pages' }}
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'pages' }}
         run: |
           repo="${{ github.repository }}"
           name="${repo#*/}"
@@ -60,35 +57,35 @@ jobs:
           fi
 
       - name: Build (GitHub Pages)
-        if: ${{ env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'pages' }}
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'pages' }}
         run: npm run build
         env:
           BASE_PATH: ${{ env.BASE_PATH }}
           SITE: ${{ env.SITE }}
 
       - name: Move GitHub Pages build
-        if: ${{ env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'pages' }}
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'pages' }}
         run: mv dist dist-pages
 
       - name: Build (SSH)
-        if: ${{ env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'ssh' }}
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'ssh' }}
         run: npm run build
         env:
           BASE_PATH: /
           SITE: ${{ secrets.SSH_SITE }}
 
       - name: Move SSH build
-        if: ${{ env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'ssh' }}
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'ssh' }}
         run: mv dist dist-ssh
 
       - name: Upload artifact
-        if: ${{ env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'pages' }}
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'pages' }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist-pages
 
       - name: Upload artifact (ssh)
-        if: ${{ env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'ssh' }}
+        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'ssh' }}
         uses: actions/upload-artifact@v4
         with:
           name: site-dist
@@ -98,7 +95,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'pages' }}
+    if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'pages' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -110,7 +107,7 @@ jobs:
   deploy_ssh:
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ (env.DEPLOY_TARGET == 'both' || env.DEPLOY_TARGET == 'ssh') && secrets.SSH_PRIVATE_KEY != '' && secrets.SSH_HOST != '' && secrets.SSH_USER != '' && secrets.SSH_PATH != '' }}
+    if: ${{ (github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'ssh') && secrets.SSH_PRIVATE_KEY != '' && secrets.SSH_HOST != '' && secrets.SSH_USER != '' && secrets.SSH_PATH != '' }}
     env:
       SSH_HOST: ${{ secrets.SSH_HOST }}
       SSH_USER: ${{ secrets.SSH_USER }}
