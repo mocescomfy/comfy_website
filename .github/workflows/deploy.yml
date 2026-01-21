@@ -69,10 +69,20 @@ jobs:
 
       - name: Build (SSH)
         if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'ssh' }}
-        run: npm run build
+        run: |
+          site="${SSH_SITE:-}"
+          if [ -z "$site" ]; then
+            if [ -n "${SSH_HOST:-}" ]; then
+              site="https://${SSH_HOST}"
+            else
+              echo "SSH_SITE or SSH_HOST must be set for SSH build."
+              exit 1
+            fi
+          fi
+          SITE="$site" BASE_PATH=/ npm run build
         env:
-          BASE_PATH: /
-          SITE: ${{ secrets.SSH_SITE }}
+          SSH_SITE: ${{ secrets.SSH_SITE }}
+          SSH_HOST: ${{ secrets.SSH_HOST }}
 
       - name: Move SSH build
         if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'ssh' }}
