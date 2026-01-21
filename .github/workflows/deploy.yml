@@ -107,7 +107,7 @@ jobs:
   deploy_ssh:
     needs: build
     runs-on: ubuntu-latest
-    if: ${{ (github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'ssh') && secrets.SSH_PRIVATE_KEY != '' && secrets.SSH_HOST != '' && secrets.SSH_USER != '' && secrets.SSH_PATH != '' }}
+    if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.deploy_target == 'both' || github.event.inputs.deploy_target == 'ssh' }}
     env:
       SSH_HOST: ${{ secrets.SSH_HOST }}
       SSH_USER: ${{ secrets.SSH_USER }}
@@ -116,6 +116,20 @@ jobs:
       SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
       SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
     steps:
+      - name: Validate SSH secrets
+        run: |
+          missing=0
+          for name in SSH_HOST SSH_USER SSH_PATH SSH_PRIVATE_KEY; do
+            if [ -z "${!name:-}" ]; then
+              echo "Missing required secret: $name"
+              missing=1
+            fi
+          done
+          if [ "$missing" -ne 0 ]; then
+            echo "Set required SSH secrets to enable SSH deploy."
+            exit 1
+          fi
+
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
