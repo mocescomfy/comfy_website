@@ -70,6 +70,11 @@
     @apply font-fredoka text-[#111827];
   }
 
+  /* Justified text for paragraphs */
+  p {
+    @apply text-justify;
+  }
+
   /* Reduced motion support */
   @media (prefers-reduced-motion: reduce) {
     * {
