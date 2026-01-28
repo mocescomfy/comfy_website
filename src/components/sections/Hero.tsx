@@ -44,15 +44,15 @@ export default function Hero() {
             {/* Heading and subtitle */}
             <div className="flex flex-col gap-8 md:gap-8 items-center w-full">
               <h1 className="font-semibold text-[48px] md:text-[72px] lg:text-[96px] leading-[1.08] text-black uppercase">
-                Apoie a Saúde Mental dos Jovens de Olhão
+                Apoia a Saúde Mental dos Jovens
               </h1>
               <p className="font-normal text-[20px] md:text-2xl lg:text-2xl leading-[28px] md:leading-8 text-black w-full">
-                Ajude a criar a app Comfy e promover o bem-estar emocional dos jovens
+                Ajuda-nos a melhorar a Comfy app e promover o bem-estar emocional dos jovens!
               </p>
             </div>
 
             {/* CTA Button */}
-            <DonateButton />
+            <DonateButton text="Faz uma doação" />
           </div>
         </div>
       </div>
