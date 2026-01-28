@@ -7,7 +7,7 @@ import FundraisingGoal from './FundraisingGoal';
 
 export default function Contribute() {
   return (
-    <section id="contribuir" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24">
+    <section id="contribuir" className="relative w-full px-4 py-10 md:px-8 md:py-20 lg:px-16 lg:py-24">
       {/* Max-width wrapper to contain decorative elements on wide screens */}
       <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-16">
         <div className="flex flex-col gap-16 lg:flex-row lg:gap-16" style={{ gap: '4em' }}>
@@ -42,7 +42,9 @@ export default function Contribute() {
                   <span>Escolha o valor que deseja contribuir e faça a sua parte na transformação da vida de jovens em Olhão.</span>
                 </li>
               </ul>
-              <DonateButton  className='bg-[#B496C8]' showFace={false}/>
+              <div className="flex justify-center md:justify-start">
+                <DonateButton className='bg-[#B496C8]' showFace={false}/>
+              </div>
             </div>            
           </div>
           {/* Pink blob decoration - bottom-right, rotated ~10deg, contained within */}

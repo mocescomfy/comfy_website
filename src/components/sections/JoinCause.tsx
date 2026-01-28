@@ -3,7 +3,7 @@ import Button from '../shared/Button';
 
 export default function JoinCause() {
   return (
-    <section id="causa" className="relative w-full overflow-hidden py-16 md:py-20 lg:py-24">
+    <section id="causa" className="relative w-full overflow-hidden py-10 md:py-20 lg:py-24">
       {/* Max-width wrapper to contain decorative elements on wide screens */}
       <div className="relative max-w-[1440px] mx-auto">
         {/* Left decorative star - similar to Hero.tsx pattern, cream/hummus color */}

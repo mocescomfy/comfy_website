@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Transparency() {
   return (
-    <section id="transparencia" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6] overflow-x-visible">
+    <section id="transparencia" className="relative w-full px-4 py-10 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6] overflow-x-visible">
       {/* Background with CSS radial gradient (scales to any viewport) + noise texture */}
       <div aria-hidden className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* CSS radial gradient for aqua color - scales properly at all viewport sizes */}

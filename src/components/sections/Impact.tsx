@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Impact() {
   return (
-    <section id="impacto" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6] overflow-hidden">
+    <section id="impacto" className="relative w-full px-4 py-10 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6] overflow-hidden">
       {/* Max-width wrapper to contain content on wide screens */}
       <div className="relative max-w-[1440px] mx-auto">
         {/* 2 Column Layout - stacked on mobile/tablet, side-by-side on desktop */}

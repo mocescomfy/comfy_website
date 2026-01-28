@@ -4,7 +4,7 @@ import DonateButton from '../shared/DonateButton';
 
 export default function Project() {
   return (
-    <section id="projeto" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6]">
+    <section id="projeto" className="relative w-full px-4 py-10 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-[#FAF0E6]">
       {/* Background with CSS radial gradient (scales to any viewport) + noise texture */}
       <div aria-hidden className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* CSS radial gradient - scales properly at all viewport sizes */}
@@ -76,12 +76,14 @@ export default function Project() {
             </div>
 
             {/* CTA */}
-            <div className="relative h-20 w-[320px] md:w-[420px] lg:w-[430px]">
-              <DonateButton
-                text="SAIBA MAIS SOBRE O PROJETO"
-                showFace={false}
-                href="https://www.instagram.com/the.comfy.app/"
-              />
+            <div className="flex justify-center md:justify-start">
+              <div className="relative h-20 w-[320px] md:w-[420px] lg:w-[430px]">
+                <DonateButton
+                  text="SAIBA MAIS SOBRE O PROJETO"
+                  showFace={false}
+                  href="https://www.instagram.com/the.comfy.app/"
+                />
+              </div>
             </div>
           </div>
         </div>

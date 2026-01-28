@@ -3,7 +3,7 @@ import DonateButton from '../shared/DonateButton';
 
 export default function AppComfy() {
   return (
-    <section id="app" className="relative w-full px-4 py-16 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-transparent">
+    <section id="app" className="relative w-full px-4 py-10 md:px-8 md:py-20 lg:px-16 lg:py-24 bg-transparent">
       {/* Max-width wrapper to contain decorative elements on wide screens */}
       <div className="relative max-w-[1440px] mx-auto">
         {/* Cloud decoration top-right */}
