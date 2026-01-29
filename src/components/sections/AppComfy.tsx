@@ -35,17 +35,17 @@ export default function AppComfy() {
               </span>
             </div>
             <h3 className="font-semibold text-black text-center text-[28px] md:text-[40px] lg:text-[56px] leading-[1.08] z-[1000]">
-              Apoio ao Bem-Estar e Saúde Mental dos Jovens
+              Um novo caminho para a saúde mental dos jovens
             </h3>
             {/* Body */}
             <p className="text-black text-center text-[16px] leading-6 md:text-[20px] md:leading-8 lg:text-[24px] lg:leading-8 max-w-[820px] z-[1000]">
-              A app Comfy foi desenhada para ajudar os jovens a desenvolverem as suas competências emocionais, melhorar a autoestima e aumentar a resiliência de maneira gratuita. Através de conteúdos interativos e ferramentas adaptadas, os jovens terão o apoio necessário para enfrentar situações de stress, ansiedade e outros desafios emocionais, promovendo um equilíbrio psicológico saudável.
+              A Comfy App foi desenhada para apoiar os jovens no desenvolvimento das suas competências emocionais, no fortalecimento da autoestima e no aumento da resiliência, de forma gratuita. Através de conteúdos interativos e ferramentas adaptadas à sua idade, os jovens têm acesso a apoio prático para lidar com situações de stress, ansiedade e outros desafios emocionais, promovendo um equilíbrio psicológico mais saudável e consciente.
             </p>
 
             {/* CTA */}
             <div className="mt-2">
               <DonateButton
-                text="CONHEÇA A APP COMFY"
+                text="CONHECE A APP COMFY"
                 showFace={false}
                 href="https://www.instagram.com/the.comfy.app/"
               />
@@ -66,7 +66,7 @@ export default function AppComfy() {
         </div>
 
         {/* Bottom-left friendly blob - positioned relative to the section */}
-        <div aria-hidden className="absolute left-[100px] md:left-[160px] lg:left-[220px] bottom-[10px] md:bottom-[15px] lg:bottom-[20px] w-[90px] h-[80px] md:w-[150px] md:h-[132px] lg:w-[230px] lg:h-[203px] z-[10]">
+        <div aria-hidden className="absolute left-[20px] md:left-[160px] lg:left-[220px] bottom-[10px] md:bottom-[15px] lg:bottom-[20px] w-[90px] h-[80px] md:w-[150px] md:h-[132px] lg:w-[230px] lg:h-[203px] z-[10]">
           <img src="app/black_smiling_cloud.svg" alt="" className="w-full h-full object-contain" />
         </div>
       </div>
