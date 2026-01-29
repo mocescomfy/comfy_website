@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '../shared/Button';
 import DonateButton from '../shared/DonateButton';
 import StarDecoration from '../shared/decorations/StarDecoration';
-import PinkBlobDecoration from '../shared/decorations/PinkBlobDecoration';
 import FundraisingGoal from './FundraisingGoal';
 
 export default function Contribute() {
@@ -46,10 +45,6 @@ export default function Contribute() {
               </div>
             </div>            
           </div>
-          {/* Pink blob decoration - bottom-right, rotated ~10deg, contained within */}
-          <PinkBlobDecoration
-              className="absolute bottom-[-20px] right-230 z-10 lg:hidden"
-            />
 
           {/* RIGHT/BOTTOM: Fundraising Goal - 1/3 width */}
           <FundraisingGoal />
