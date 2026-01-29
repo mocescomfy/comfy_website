@@ -30,14 +30,11 @@ export default function Transparency() {
       </div>
       <div className="container-responsive max-w-[752px] relative z-10">
         <h2 className="font-semibold text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08] text-black text-center mb-8">
-          Transparência e Responsabilidade
+          Transparência e responsabilidade
         </h2>
-        
+
         <p className="font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black text-center mb-8">
-          A MOCES garante total transparência na utilização dos fundos arrecadados. Todos os donativos serão 
-          utilizados exclusivamente para o desenvolvimento da app Comfy e para a promoção do projeto Zona 
-          De(s)conforto. Os nossos relatórios financeiros serão partilhados periodicamente com os nossos 
-          apoiantes, garantindo a confiança e o compromisso com a causa.
+          Na MOCES, garantimos total transparência na utilização dos fundos angariados. Todos os donativos serão aplicados exclusivamente no desenvolvimento da Comfy App e na promoção do projeto Zona De(s)conforto. Partilharemos regularmente relatórios de acompanhamento com os nossos apoiantes, assegurando uma gestão responsável, ética e alinhada com a missão do projeto.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mt-8 hidden">
