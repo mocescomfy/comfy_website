@@ -38,7 +38,10 @@ export default function Project() {
               O Projeto Zona De(s)conforto
             </h2>
             <p className="mt-6 font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
-              <span className="font-bold">Zona De(s)conforto</span> é um projeto premiado apoiado pelo <span className="font-bold">Portugal Inovação Social</span>, criado pela <span className="font-bold">MOCES</span>. A sua missão é promover a saúde mental entre jovens dos 12 aos 18 anos, através de uma combinação de atividades presenciais nas escolas e uma app inovadora e gratuita (a App Comfy). O projeto oferece um espaço seguro para o desenvolvimento de competências emocionais, o aumento da autoestima e a construção de resiliência para enfrentar os desafios da vida.
+              Zona De(s)conforto - uma zona confortável para partilhar o desconforto, é um projeto financiado pelo Portugal Inovação Social e criado pela associação MOCES.
+            </p>
+            <p className="mt-4 font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
+              A nossa missão é promover a saúde mental de jovens dos 12 aos 18 anos, através de uma aplicação inovadora, gratuita e acessível: The Comfy App.
             </p>
           </div>
           <div className="hidden md:block shrink-0 md:w-[220px] md:h-[220px] lg:w-[320px] lg:h-[320px] rounded-full overflow-hidden">
@@ -65,13 +68,13 @@ export default function Project() {
           <div className="flex flex-col gap-12 max-w-[558px]">
             <div className="text-black">
               <p className="text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px]">
-                Este é o início de um movimento para tornar a saúde mental uma prioridade. Começando no Município de Olhão, o nosso objetivo é expandir este impacto transformador a nível nacional.
+                Acreditamos que falar sobre emoções, aprender a regulá-las e pedir ajuda não deve ser um tabu. Por isso, criámos um espaço digital seguro, pensado para os jovens, onde podem desenvolver competências emocionais, fortalecer a autoestima, cultivar a resiliência e aceder a ferramentas práticas para lidar com os desafios da vida. Todo o conteúdo é adequado à idade e complementado por apoio profissional responsável, através de uma linha de apoio via chat com psicólogos.
               </p>
               <p className="text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] mt-4">
-                Siga a nossa <a href="https://www.instagram.com/the.comfy.app/" className="underline" target="_blank" rel="noreferrer">página</a> e junte-se a nós nesta jornada de transformação!
+                Este projeto é mais do que uma aplicação: é o início de um movimento para colocar a saúde mental no centro das prioridades sociais. Começamos pelo Município de Olhão, onde está a ser implementado o projeto-piloto, com o objetivo claro de expandir este impacto transformador a nível nacional, em colaboração com municípios, escolas e entidades parceiras.
               </p>
               <p className="text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] mt-4">
-                Se deseja apoiar este projeto, por favor, faça uma doação <a href="https://gofund.me/5155e84f" className="underline" target="_blank" rel="noreferrer">aqui</a>.
+                A Comfy App é gratuita, desenvolvida com o apoio de profissionais de saúde mental e baseada em evidência científica, complementando e nunca substituindo o papel das famílias, escolas e serviços de saúde.
               </p>
             </div>
 
@@ -79,7 +82,7 @@ export default function Project() {
             <div className="flex justify-center md:justify-start">
               <div className="relative h-20 w-[320px] md:w-[420px] lg:w-[430px]">
                 <DonateButton
-                  text="SAIBA MAIS SOBRE O PROJETO"
+                  text="Sabe mais sobre o projeto"
                   showFace={false}
                   href="https://www.instagram.com/the.comfy.app/"
                 />
