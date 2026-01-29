@@ -12,13 +12,12 @@ export default function Impact() {
           <div className="flex flex-col">
             {/* Title */}
             <h2 className="text-3xl font-bold text-[#111827] text-left md:text-5xl lg:text-6xl mb-8 md:mb-12">
-              O Impacto da <br className='md:hidden'/>Sua Doação
+              O Impacto da <br className='md:hidden'/>tua doação
             </h2>
             
             {/* Intro paragraph */}
             <p className="text-base text-[#4b5563] text-left mb-8 md:text-lg md:mb-12">
-              Com o seu apoio, poderemos desenvolver a app Comfy, promovendo a saúde mental e o bem-estar 
-              emocional dos jovens. A sua doação será usada para:
+              Com o teu apoio, podemos continuar a desenvolver e fortalecer a Comfy App, promovendo a saúde mental e o bem-estar emocional dos jovens. A tua doação será essencial para:
             </p>
 
             {/* Bullet list in green box */}
@@ -28,27 +27,26 @@ export default function Impact() {
                   <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
                     <img src="app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
                   </span>
-                  <span>Desenvolver e melhorar a tecnologia da app</span>
+                  <span>Desenvolver e melhorar a tecnologia da aplicação</span>
                 </li>
                 <li className="flex items-start gap-4 font-bold">
                   <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
                     <img src="app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
                   </span>
-                  <span>Promover a app em escolas e centros comunitários</span>
+                  <span>Reforçar e capacitar a nossa equipa de profissionais especializados em saúde mental</span>
                 </li>
                 <li className="flex items-start gap-4 font-bold">
                   <span className="flex-shrink-0 w-6 h-6 flex items-center justify-center mt-1">
                     <img src="app/tiny_pink_cloud.svg" alt="" className="w-full h-full object-contain" />
                   </span>
-                  <span>Formar facilitadores especializados em saúde mental</span>
+                  <span>Criar conteúdos originais e adaptados a cada faixa etária, incluindo jogos, áudios e ferramentas interativas, apoiando criadores e profissionais especializados</span>
                 </li>
               </ul>
             </div>
 
             {/* Concluding paragraph */}
             <p className="text-base text-[#4b5563] text-left md:text-lg">
-              Cada contribuição faz uma diferença significativa na vida dos jovens em Olhão, ajudando-os a 
-              crescer mais fortes e mais confiantes.
+              Cada contribuição faz uma diferença real na vida dos jovens de Olhão, ajudando-os a crescer com mais confiança, equilíbrio emocional e ferramentas para enfrentar os desafios do futuro.
             </p>
           </div>
 
