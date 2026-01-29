@@ -51,13 +51,13 @@ export default function JoinCause() {
           <div className="flex flex-col gap-[32px] items-center w-full">
             {/* Main heading - Fredoka SemiBold 72px */}
             <h2 className="font-fredoka font-semibold text-[48px] md:text-[56px] lg:text-[72px] leading-[1.08] text-black text-center">
-              Junte-se à Causa
+              Junta-te à causa
             </h2>
             
             {/* Intro text - Fredoka Regular 24px, two paragraphs */}
             <div className="flex flex-col gap-0 items-center text-center">
               <p className="font-fredoka font-normal text-[20px] md:text-[22px] lg:text-[24px] leading-[32px] text-black">
-                Quer contribuir de outra forma?
+                Queres contribuir de outra forma?
               </p>
               <p className="font-fredoka font-normal text-[20px] md:text-[22px] lg:text-[24px] leading-[32px] text-black">
                 Existem várias maneiras de ajudar:
@@ -73,38 +73,38 @@ export default function JoinCause() {
                   <li className="flex items-start">
                     <span className="flex-shrink-0 w-[17px] h-[17px] flex items-center justify-center mt-[6px] mr-[19px] ml-[30.5px]">
                       {/* Using tiny_pink_cloud.svg - can be replaced with bullet-star-icon.svg from Figma */}
-                      <img 
+                      <img
                         src="app/tiny_pink_cloud.svg"
-                        alt="" 
+                        alt=""
                         className="w-full h-full object-contain"
                         style={{ filter: 'hue-rotate(-30deg) saturate(1.5) brightness(0.85)' }}
                       />
                     </span>
-                    <span className="leading-[32px]">Partilhar a página com amigos e familiares</span>
+                    <span className="leading-[32px]">Partilhar o projeto com amigos e familiares</span>
                   </li>
-                  
+
                   <li className="flex items-start mt-[32px]">
                     <span className="flex-shrink-0 w-[17px] h-[17px] flex items-center justify-center mt-[6px] mr-[19px] ml-[30.5px]">
-                      <img 
+                      <img
                         src="app/tiny_pink_cloud.svg"
-                        alt="" 
+                        alt=""
                         className="w-full h-full object-contain"
                         style={{ filter: 'hue-rotate(-30deg) saturate(1.5) brightness(0.85)' }}
                       />
                     </span>
-                    <span className="leading-[32px]">Participar em eventos e atividades organizadas pela MOCES</span>
+                    <span className="leading-[32px]">Fazer voluntariado no projeto (psicólogos, criadores de conteúdo, designers)</span>
                   </li>
-                  
-                  <li className="flex items-start mt-[64px]">
+
+                  <li className="flex items-start mt-[32px]">
                     <span className="flex-shrink-0 w-[17px] h-[17px] flex items-center justify-center mt-[6px] mr-[19px] ml-[30.5px]">
-                      <img 
+                      <img
                         src="app/tiny_pink_cloud.svg"
-                        alt="" 
+                        alt=""
                         className="w-full h-full object-contain"
                         style={{ filter: 'hue-rotate(-30deg) saturate(1.5) brightness(0.85)' }}
                       />
                     </span>
-                    <span className="leading-[32px]">Voluntariar-se para o projeto e ajudar na implementação da app</span>
+                    <span className="leading-[32px]">Seguir a nossa página no instagram: @the.comfy.app</span>
                   </li>
                 </ul>
               </div>
@@ -112,7 +112,7 @@ export default function JoinCause() {
 
             {/* CTA text - Fredoka Regular 24px, centered */}
             <p className="font-fredoka font-normal text-[20px] md:text-[22px] lg:text-[24px] leading-[32px] text-black text-center max-w-[558px]">
-              Juntos podemos criar um futuro mais saudável e positivo para os jovens em Olhão.
+              Juntos podemos criar um futuro mais saudável e positivo para os jovens!
             </p>
           </div>
 
@@ -123,8 +123,8 @@ export default function JoinCause() {
               className="absolute left-1/2 top-1/2 -translate-x-[calc(50%-4px)] -translate-y-[calc(50%-4px)] w-[calc(100%-16px)] max-w-[420px] bg-black border-4 border-black rounded-[24px] px-[16px] md:px-[40px] py-[24px] flex items-center justify-center"
               aria-hidden="true"
             >
-              <span className="font-fredoka font-semibold text-[16px] md:text-[22px] lg:text-[24px] leading-none text-black uppercase text-center">
-                PARTICIPE E FAÇA A DIFERENÇA!
+              <span className="font-fredoka font-semibold text-[16px] md:text-[22px] lg:text-[24px] leading-none text-black text-center">
+                Contacta-nos através de email
               </span>
             </div>
 
@@ -132,12 +132,10 @@ export default function JoinCause() {
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[calc(100%-16px)] max-w-[420px]">
               <Button
                 variant="secondary"
-                href="https://gofund.me/5eb16f31a"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="!w-full !rounded-[24px] !bg-[#D7D7AA] !border-4 !border-black !px-[16px] md:!px-[40px] !py-[24px] !font-fredoka font-semibold !text-[16px] md:!text-[22px] lg:!text-[24px] !leading-none !uppercase !text-black hover:!bg-[#D7D7AA] hover:!translate-x-1 hover:!translate-y-1 active:!translate-x-1 active:!translate-y-1 !shadow-none transition-all duration-200 !text-center"
+                href="mailto:ola@moces.pt"
+                className="!w-full !rounded-[24px] !bg-[#D7D7AA] !border-4 !border-black !px-[16px] md:!px-[40px] !py-[24px] !font-fredoka font-semibold !text-[16px] md:!text-[22px] lg:!text-[24px] !leading-none !text-black hover:!bg-[#D7D7AA] hover:!translate-x-1 hover:!translate-y-1 active:!translate-x-1 active:!translate-y-1 !shadow-none transition-all duration-200 !text-center"
               >
-                PARTICIPE E FAÇA A DIFERENÇA!
+                Contacta-nos através de email
               </Button>
             </div>
           </div>
@@ -160,7 +158,7 @@ export default function JoinCause() {
                   className="w-full h-full object-contain"
                 />
               </a>
-              <a href="https://www.instagram.com/moces.pt/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram">
+              <a href="https://www.instagram.com/the.comfy.app/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center hover:opacity-80 transition-opacity" aria-label="Instagram">
                 <img
                   src="app/instagramicon.svg"
                   alt="Instagram"
