@@ -16,7 +16,7 @@ export default function Hero() {
         </div>
 
         {/* Flower collage on the right (with mask) */}
-        <div className="absolute right-0 bottom-0 w-[186px] h-[180px] md:w-[300px] md:h-[292px] lg:w-[402px] lg:h-[390px] pointer-events-none opacity-80 md:opacity-100">
+        <div className="absolute right-0 bottom-0 w-[186px] h-[180px] md:w-[300px] md:h-[292px] lg:w-[402px] lg:h-[390px] lg:-right-[80px] pointer-events-none opacity-80 md:opacity-100">
           <div
             className="absolute inset-0"
             style={{
