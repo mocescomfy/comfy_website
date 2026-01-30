@@ -51,17 +51,59 @@ export default function Project() {
 
         {/* Row 2: Media card + copy + CTA */}
         <div className="mt-12 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 items-start gap-10 lg:gap-16">
-          {/* Rotated media card */}
-          <div className="justify-self-start">
-            <div className="relative inline-block rotate-[345deg]">
-              <div className="relative w-[320px] h-[200px] md:w-[420px] md:h-[260px] lg:w-[485px] lg:h-[300px] rounded-[24px] border-4 border-[#BEC864] bg-white shadow-[0_4px_20px_rgba(180,150,200,0.3)] overflow-hidden">
-                <img src="project-media.png" alt="Imagem ilustrativa do projeto Zona De(s)conforto" className="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-              </div>
-              {/* Play badge (non-functional) */}
-              <div className="absolute -right-6 -bottom-10 w-[96px] h-[96px] md:w-[112px] md:h-[112px] lg:w-[128px] lg:h-[128px] rounded-full bg-white border-4 border-[#d28cb4] shadow-[0_6px_20px_rgba(0,0,0,0.15)] grid place-items-center select-none" aria-hidden>
-                <span className="text-[#d28cb4] text-3xl md:text-4xl lg:text-5xl leading-none">▶︎</span>
-              </div>
-            </div>
+          {/* Mascots - 3 rows group photo style */}
+          <div className="justify-self-start relative w-[280px] h-[300px] md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[440px]">
+            {/* Back row - 3 small mascots */}
+            <img
+              src="app/Comfy_Bored.png"
+              alt="Comfy mascot - Bored"
+              className="absolute left-[25px] md:left-[45px] lg:left-[60px] top-0 w-[70px] md:w-[90px] lg:w-[105px] z-[10] drop-shadow-lg"
+              loading="lazy"
+            />
+            <img
+              src="app/Comfy_Anxiety.png"
+              alt="Comfy mascot - Anxiety"
+              className="absolute left-1/2 -translate-x-1/2 top-0 w-[70px] md:w-[90px] lg:w-[105px] z-[10] drop-shadow-lg"
+              loading="lazy"
+            />
+            <img
+              src="app/Comfy_Disgust.png"
+              alt="Comfy mascot - Disgust"
+              className="absolute right-[25px] md:right-[45px] lg:right-[60px] top-0 w-[70px] md:w-[90px] lg:w-[105px] z-[10] drop-shadow-lg"
+              loading="lazy"
+            />
+            {/* Middle row - 3 medium mascots, overlapping back row */}
+            <img
+              src="app/Comfy_Sad.png"
+              alt="Comfy mascot - Sad"
+              className="absolute left-[5px] md:left-[15px] lg:left-[25px] top-[55px] md:top-[70px] lg:top-[85px] w-[90px] md:w-[115px] lg:w-[135px] z-[20] drop-shadow-lg"
+              loading="lazy"
+            />
+            <img
+              src="app/Comfy_Anger.png"
+              alt="Comfy mascot - Anger"
+              className="absolute left-1/2 -translate-x-1/2 top-[50px] md:top-[65px] lg:top-[80px] w-[95px] md:w-[120px] lg:w-[140px] z-[20] drop-shadow-lg"
+              loading="lazy"
+            />
+            <img
+              src="app/Comfy_Embarressment.png"
+              alt="Comfy mascot - Embarrassment"
+              className="absolute right-[5px] md:right-[15px] lg:right-[25px] top-[55px] md:top-[70px] lg:top-[85px] w-[90px] md:w-[115px] lg:w-[135px] z-[20] drop-shadow-lg"
+              loading="lazy"
+            />
+            {/* Front row - 2 large mascots, overlapping middle row */}
+            <img
+              src="app/Comfy_Fear.png"
+              alt="Comfy mascot - Fear"
+              className="absolute left-[30px] md:left-[50px] lg:left-[65px] top-[100px] md:top-[125px] lg:top-[145px] w-[110px] md:w-[140px] lg:w-[165px] z-[30] drop-shadow-lg"
+              loading="lazy"
+            />
+            <img
+              src="app/Comfy_Happy.png"
+              alt="Comfy mascot - Happy"
+              className="absolute right-[30px] md:right-[50px] lg:right-[65px] top-[100px] md:top-[125px] lg:top-[145px] w-[110px] md:w-[140px] lg:w-[165px] z-[30] drop-shadow-lg"
+              loading="lazy"
+            />
           </div>
 
           {/* Right copy + CTA */}
