@@ -50,58 +50,58 @@ export default function Project() {
         </div>
 
         {/* Row 2: Media card + copy + CTA */}
-        <div className="mt-12 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 items-start gap-10 lg:gap-16">
+        <div className="mt-12 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 items-start gap-10 lg:gap-16 place-items-center lg:place-items-start">
           {/* Mascots - 3 rows group photo style */}
-          <div className="justify-self-start relative w-[280px] h-[300px] md:w-[380px] md:h-[380px] lg:w-[450px] lg:h-[440px]">
+          <div className="place-self-center relative w-[280px] h-[300px] md:w-[380px] md:h-[380px] lg:w-[660px] lg:h-[650px]">
             {/* Back row - 3 small mascots */}
             <img
               src="app/Comfy_Bored.png"
               alt="Comfy mascot - Bored"
-              className="absolute left-[25px] md:left-[45px] lg:left-[60px] top-0 w-[70px] md:w-[90px] lg:w-[105px] z-[10] drop-shadow-lg"
+              className="absolute left-[25px] md:left-[45px] lg:left-[90px] top-0 w-[70px] md:w-[90px] lg:w-[155px] z-[10] drop-shadow-lg"
               loading="lazy"
             />
             <img
               src="app/Comfy_Anxiety.png"
               alt="Comfy mascot - Anxiety"
-              className="absolute left-1/2 -translate-x-1/2 top-0 w-[70px] md:w-[90px] lg:w-[105px] z-[10] drop-shadow-lg"
+              className="absolute left-1/2 -translate-x-1/2 top-0 w-[70px] md:w-[90px] lg:w-[155px] z-[10] drop-shadow-lg"
               loading="lazy"
             />
             <img
               src="app/Comfy_Disgust.png"
               alt="Comfy mascot - Disgust"
-              className="absolute right-[25px] md:right-[45px] lg:right-[60px] top-0 w-[70px] md:w-[90px] lg:w-[105px] z-[10] drop-shadow-lg"
+              className="absolute right-[25px] md:right-[45px] lg:right-[90px] top-0 w-[70px] md:w-[90px] lg:w-[155px] z-[10] drop-shadow-lg"
               loading="lazy"
             />
             {/* Middle row - 3 medium mascots, overlapping back row */}
             <img
               src="app/Comfy_Sad.png"
               alt="Comfy mascot - Sad"
-              className="absolute left-[5px] md:left-[15px] lg:left-[25px] top-[55px] md:top-[70px] lg:top-[85px] w-[90px] md:w-[115px] lg:w-[135px] z-[20] drop-shadow-lg"
+              className="absolute left-[5px] md:left-[15px] lg:left-[35px] top-[55px] md:top-[70px] lg:top-[125px] w-[90px] md:w-[115px] lg:w-[205px] z-[20] drop-shadow-lg"
               loading="lazy"
             />
             <img
               src="app/Comfy_Anger.png"
               alt="Comfy mascot - Anger"
-              className="absolute left-1/2 -translate-x-1/2 top-[50px] md:top-[65px] lg:top-[80px] w-[95px] md:w-[120px] lg:w-[140px] z-[20] drop-shadow-lg"
+              className="absolute left-1/2 -translate-x-1/2 top-[50px] md:top-[65px] lg:top-[120px] w-[95px] md:w-[120px] lg:w-[210px] z-[20] drop-shadow-lg"
               loading="lazy"
             />
             <img
               src="app/Comfy_Embarressment.png"
               alt="Comfy mascot - Embarrassment"
-              className="absolute right-[5px] md:right-[15px] lg:right-[25px] top-[55px] md:top-[70px] lg:top-[85px] w-[90px] md:w-[115px] lg:w-[135px] z-[20] drop-shadow-lg"
+              className="absolute right-[5px] md:right-[15px] lg:right-[35px] top-[55px] md:top-[70px] lg:top-[125px] w-[90px] md:w-[115px] lg:w-[205px] z-[20] drop-shadow-lg"
               loading="lazy"
             />
             {/* Front row - 2 large mascots, overlapping middle row */}
             <img
               src="app/Comfy_Fear.png"
               alt="Comfy mascot - Fear"
-              className="absolute left-[30px] md:left-[50px] lg:left-[65px] top-[100px] md:top-[125px] lg:top-[145px] w-[110px] md:w-[140px] lg:w-[165px] z-[30] drop-shadow-lg"
+              className="absolute left-[30px] md:left-[50px] lg:left-[95px] top-[100px] md:top-[125px] lg:top-[220px] w-[110px] md:w-[140px] lg:w-[240px] z-[30] drop-shadow-lg"
               loading="lazy"
             />
             <img
               src="app/Comfy_Happy.png"
               alt="Comfy mascot - Happy"
-              className="absolute right-[30px] md:right-[50px] lg:right-[65px] top-[100px] md:top-[125px] lg:top-[145px] w-[110px] md:w-[140px] lg:w-[165px] z-[30] drop-shadow-lg"
+              className="absolute right-[30px] md:right-[50px] lg:right-[95px] top-[100px] md:top-[125px] lg:top-[220px] w-[110px] md:w-[140px] lg:w-[240px] z-[30] drop-shadow-lg"
               loading="lazy"
             />
           </div>
@@ -121,7 +121,7 @@ export default function Project() {
             </div>
 
             {/* CTA */}
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center lg:justify-start">
               <div className="relative h-20 w-[320px] md:w-[420px] lg:w-[430px]">
                 <DonateButton
                   text="Sabe mais sobre o projeto"
