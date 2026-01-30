@@ -38,9 +38,9 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Main content - centered */}
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-[600px] md:min-h-[700px] lg:min-h-[800px] px-4 pt-16 pb-12 md:pt-32 md:pb-16">
-          <div className="flex flex-col items-center gap-12 md:gap-12 max-w-[310px] md:max-w-[680px] lg:max-w-[900px] mx-auto text-center">
+        {/* Main content - centered with right padding on desktop to avoid flower overlap */}
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-[600px] md:min-h-[700px] lg:min-h-[800px] px-4 lg:pl-4 lg:pr-[350px] pt-16 pb-12 md:pt-32 md:pb-16">
+          <div className="flex flex-col items-center gap-12 md:gap-12 max-w-[310px] md:max-w-[680px] lg:max-w-[800px] mx-auto text-center">
             {/* Heading and subtitle */}
             <div className="flex flex-col gap-8 md:gap-8 items-center w-full">
               <h1 className="font-semibold text-[48px] md:text-[72px] lg:text-[96px] leading-[1.08] text-black uppercase">
