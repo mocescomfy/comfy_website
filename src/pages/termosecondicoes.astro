@@ -1,0 +1,154 @@
+---
+import LogoZone from '../components/LogoZone.astro';
+import Footer from '../components/layout/Footer.tsx';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<!-- Header with Logo Zone -->
+	<header>
+		<LogoZone />
+	</header>
+
+	<!-- Main Content -->
+	<main class="bg-[#FAF0E6] min-h-screen">
+		<div class="max-w-4xl mx-auto px-4 py-12 md:py-20">
+			<a href="/" class="inline-flex items-center text-[#d28cb4] hover:underline font-medium mb-6">
+				← Voltar à página principal
+			</a>
+			<h1 class="text-4xl md:text-5xl font-bold text-[#111827] mb-4">
+				Termos e Condições
+			</h1>
+			<p class="text-[#6b7280] mb-8">Última atualização: Fevereiro 2026</p>
+
+			<div class="space-y-8 text-[#4b5563]">
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">1. Introdução</h2>
+					<p class="mb-4">
+						Bem-vindo à Comfy App ("Aplicação"), desenvolvida pela Associação MOCES no âmbito do projeto Zona De(s)conforto.
+						Ao descarregar, instalar ou utilizar a nossa Aplicação, concorda com estes Termos e Condições.
+						Se não concordar com estes termos, por favor não utilize a Aplicação.
+					</p>
+					<p>
+						A Comfy App é uma aplicação gratuita destinada a jovens dos 12 aos 18 anos, com o objetivo de promover
+						a saúde mental e o bem-estar emocional através de conteúdos educativos e ferramentas interativas.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">2. Licença de Utilização</h2>
+					<p class="mb-4">
+						A MOCES concede-lhe uma licença limitada, não exclusiva, intransmissível e revogável para utilizar
+						a Aplicação para fins pessoais e não comerciais, de acordo com estes Termos.
+					</p>
+					<p>Não pode:</p>
+					<ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+						<li>Copiar, modificar ou distribuir a Aplicação</li>
+						<li>Fazer engenharia reversa ou tentar extrair o código-fonte</li>
+						<li>Utilizar a Aplicação para fins ilegais ou não autorizados</li>
+						<li>Remover avisos de direitos de autor ou propriedade</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">3. Aviso de Saúde Importante</h2>
+					<div class="bg-[#fef3c7] border-l-4 border-[#f59e0b] p-4 rounded-r-lg">
+						<p class="font-semibold text-[#92400e] mb-2">Atenção:</p>
+						<p class="text-[#92400e]">
+							A Comfy App fornece informações gerais e ferramentas de apoio ao bem-estar emocional.
+							<strong>Não substitui aconselhamento médico profissional, diagnóstico ou tratamento.</strong>
+							Se está a experienciar uma crise de saúde mental ou tem pensamentos de autolesão,
+							contacte imediatamente um profissional de saúde ou ligue para o SNS 24 (808 24 24 24).
+						</p>
+					</div>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">4. Utilização por Menores</h2>
+					<p class="mb-4">
+						A Aplicação é destinada a jovens dos 12 aos 18 anos. Para utilizadores menores de 16 anos,
+						recomendamos que os pais ou responsáveis legais revejam estes Termos e supervisionem a utilização da Aplicação.
+					</p>
+					<p>
+						Todo o conteúdo é desenvolvido por profissionais de saúde mental e adaptado às diferentes faixas etárias.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">5. Privacidade e Proteção de Dados</h2>
+					<p class="mb-4">
+						A sua privacidade é importante para nós. A recolha e tratamento dos seus dados pessoais é feita
+						em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD) e a legislação portuguesa aplicável.
+					</p>
+					<p class="mb-4">
+						Comprometemo-nos a:
+					</p>
+					<ul class="list-disc list-inside ml-4 space-y-1">
+						<li>Recolher apenas os dados necessários para o funcionamento da Aplicação</li>
+						<li>Não partilhar os seus dados com terceiros para fins comerciais</li>
+						<li>Proteger os seus dados com medidas de segurança adequadas</li>
+						<li>Permitir que solicite acesso, retificação ou eliminação dos seus dados</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">6. Propriedade Intelectual</h2>
+					<p>
+						Todos os conteúdos da Aplicação, incluindo textos, gráficos, logótipos, ícones, imagens,
+						áudios e software, são propriedade da MOCES ou dos seus licenciadores e estão protegidos
+						por leis de direitos de autor e propriedade intelectual.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">7. Limitação de Responsabilidade</h2>
+					<p class="mb-4">
+						A Aplicação é fornecida "tal como está". Na máxima extensão permitida por lei, a MOCES não será
+						responsável por quaisquer danos diretos, indiretos, incidentais ou consequenciais resultantes
+						da utilização ou impossibilidade de utilização da Aplicação.
+					</p>
+					<p>
+						Esforçamo-nos por manter a Aplicação disponível e livre de erros, mas não garantimos que
+						estará sempre acessível ou funcionará sem interrupções.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">8. Alterações aos Termos</h2>
+					<p>
+						Reservamo-nos o direito de modificar estes Termos a qualquer momento. As alterações entram em vigor
+						após publicação na Aplicação. A continuação da utilização após alterações constitui aceitação dos novos Termos.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">9. Lei Aplicável</h2>
+					<p>
+						Estes Termos são regidos pela lei portuguesa. Qualquer litígio será submetido à jurisdição
+						exclusiva dos tribunais portugueses.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">10. Contacto</h2>
+					<p class="mb-4">
+						Para questões relacionadas com estes Termos e Condições ou com a Aplicação, contacte-nos:
+					</p>
+					<div class="bg-white rounded-lg p-4 border border-[#e5e7eb]">
+						<p class="font-semibold text-[#111827]">Associação MOCES</p>
+						<p>Email: <a href="mailto:ola@moces.pt" class="text-[#d28cb4] hover:underline">ola@moces.pt</a></p>
+					</div>
+				</section>
+			</div>
+
+			<div class="mt-12 pt-8 border-t border-[#e5e7eb]">
+				<a href="/" class="inline-flex items-center text-[#d28cb4] hover:underline font-medium">
+					← Voltar à página principal
+				</a>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<Footer client:load />
+</Layout>
