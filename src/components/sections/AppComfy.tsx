@@ -12,7 +12,7 @@ export default function AppComfy() {
         </div>
 
         {/* Left phone mockups - hidden on mobile per Figma */}
-        <div aria-hidden className="hidden md:block absolute -left-[60px] md:-left-[140px] lg:left-[20px] top-[0px] z-[10]">
+        <div aria-hidden className="hidden md:block absolute -left-[60px] md:-left-[180px] lg:-left-[160px] xl:-left-[100px] 2xl:left-[20px] top-[0px] z-[10]">
           <div className="relative w-[160px] h-[300px] md:w-[220px] md:h-[410px] lg:w-[280px] lg:h-[520px]">
             <div className="absolute left-6 md:left-10 top-[40px] md:top-[72px] rotate-[-7deg] w-[120px] h-[250px] md:w-[170px] md:h-[360px] lg:w-[220px] lg:h-[460px] rounded-[16px] md:rounded-[20px] lg:rounded-[24px] border-2 md:border-4 border-[#B496C8] overflow-hidden bg-white shadow-[0_6px_20px_rgba(0,0,0,0.15)]">
               <img src="app/phone-left-1.png" alt="" className="w-full h-full object-cover" loading="lazy" />
@@ -24,9 +24,9 @@ export default function AppComfy() {
         </div>
 
         {/* Lavender rounded panel */}
-        <div className="relative z-[1] mx-auto max-w-[1280px] bg-[#B496C8] rounded-[40px] md:rounded-[60px] lg:rounded-[80px] px-6 md:px-10 lg:px-20 py-12 md:py-16 lg:py-24 overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
+        <div className="relative mx-auto max-w-[1280px] bg-[#B496C8] rounded-[40px] md:rounded-[60px] lg:rounded-[80px] px-6 md:px-10 lg:px-20 py-12 md:py-16 lg:py-24 overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)]">
           {/* Centered content */}
-          <div className="relative z-[2] max-w-[946px] mx-auto flex flex-col items-center gap-8 z-[1000]">
+          <div className="relative z-[20] max-w-[946px] mx-auto flex flex-col items-center gap-8">
             {/* Title */}
             <div className="flex items-end justify-center gap-3">
               <h2 className="font-semibold text-black text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08] whitespace-nowrap">A App</h2>
@@ -34,11 +34,11 @@ export default function AppComfy() {
                 <img src="app/greencloud.svg" alt="" className="h-full w-auto" />
               </span>
             </div>
-            <h3 className="font-semibold text-black text-center text-[28px] md:text-[40px] lg:text-[56px] leading-[1.08] z-[1000]">
+            <h3 className="font-semibold text-black text-center text-[28px] md:text-[40px] lg:text-[56px] leading-[1.08]">
               Um novo caminho para a saúde mental dos jovens
             </h3>
             {/* Body */}
-            <p className="text-black text-center text-[16px] leading-6 md:text-[20px] md:leading-8 lg:text-[24px] lg:leading-8 max-w-[820px] z-[1000]">
+            <p className="text-black text-center text-[16px] leading-6 md:text-[20px] md:leading-8 lg:text-[24px] lg:leading-8 max-w-[820px]">
               A Comfy App foi desenhada para apoiar os jovens no desenvolvimento das suas competências emocionais, no fortalecimento da autoestima e no aumento da resiliência, de forma gratuita. Através de conteúdos interativos e ferramentas adaptadas à sua idade, os jovens têm acesso a apoio prático para lidar com situações de stress, ansiedade e outros desafios emocionais, promovendo um equilíbrio psicológico mais saudável e consciente.
             </p>
 
@@ -54,7 +54,7 @@ export default function AppComfy() {
         </div>
 
         {/* Right phone mockups - hidden on mobile per Figma */}
-        <div aria-hidden className="hidden md:block absolute -right-[40px] md:-right-[120px] lg:right-[72px] bottom-[60px] md:bottom-[40px] lg:bottom-[32px] z-[10]">
+        <div aria-hidden className="hidden md:block absolute -right-[40px] md:-right-[160px] lg:-right-[140px] xl:-right-[80px] 2xl:right-[72px] bottom-[60px] md:bottom-[40px] lg:bottom-[32px] z-[10]">
           <div className="relative w-[160px] h-[300px] md:w-[220px] md:h-[410px] lg:w-[280px] lg:h-[520px]">
             <div className="absolute right-0 bottom-0 rotate-[10deg] w-[120px] h-[250px] md:w-[170px] md:h-[360px] lg:w-[220px] lg:h-[460px] rounded-[16px] md:rounded-[20px] lg:rounded-[24px] border-2 md:border-4 border-[#B496C8] overflow-hidden bg-white shadow-[0_6px_20px_rgba(0,0,0,0.15)]">
               <img src="app/phone-right-1.png" alt="" className="w-full h-full object-cover" loading="lazy" />
