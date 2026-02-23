@@ -1,7 +1,7 @@
 ---
 // Logo Zone Component - Displays the three brand logos above navigation
 import { Image } from 'astro:assets';
-import mocesLogo from '../assets/moces.png';
+import mocesLogo from '../assets/moces.svg';
 import zonaLogo from '../assets/zonadesconforto.png';
 import comfyLogo from '../assets/comfy.png';
 ---
@@ -18,12 +18,12 @@ import comfyLogo from '../assets/comfy.png';
     <!-- Logos container - horizontal row -->
     <div class="flex flex-row items-center gap-6">
       <!-- Moces Logo -->
-      <div class="flex items-center justify-center flex-shrink-0 w-[78px] h-4 sm:w-[120px] sm:h-6">
+      <div class="flex items-center justify-center flex-shrink-0 w-[40px] h-[50px] sm:w-[60px] sm:h-[75px]">
         <Image
           src={mocesLogo}
           alt="Moces - Organização sem fins lucrativos"
-          width={120}
-          height={24}
+          width={60}
+          height={75}
           loading="eager"
           decoding="async"
           class="w-full h-full object-contain"
@@ -44,12 +44,12 @@ import comfyLogo from '../assets/comfy.png';
       </div>
 
       <!-- Comfy Logo -->
-      <div class="flex items-center justify-center flex-shrink-0 w-[71px] h-6 sm:w-[110px] sm:h-[37px]">
+      <div class="flex items-center justify-center flex-shrink-0 w-[50px] h-[60px] sm:w-[80px] sm:h-[95px]">
         <Image
           src={comfyLogo}
           alt="Comfy App"
-          width={110}
-          height={37}
+          width={80}
+          height={95}
           loading="eager"
           decoding="async"
           class="w-full h-full object-contain"
