@@ -35,10 +35,10 @@ export default function Project() {
         <div className="flex items-start justify-between gap-8">
           <div className="max-w-[752px]">
             <h2 className="font-semibold text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08] text-black">
-              O Projeto Zona De(s)conforto
+              O projeto Zona De(s)conforto
             </h2>
             <p className="mt-6 font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
-              Zona De(s)conforto - uma zona confortável para partilhar o desconforto, é um projeto financiado pelo Portugal Inovação Social e criado pela associação MOCES.
+              <strong>Zona De(s)conforto - uma zona confortável para partilhar o desconforto</strong>, é um projeto financiado pelo Portugal Inovação Social e criado pela associação MOCES.
             </p>
             <p className="mt-4 font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
               A nossa missão é promover a saúde mental de jovens dos 12 aos 18 anos, através de uma aplicação inovadora, gratuita e acessível: The Comfy App.
