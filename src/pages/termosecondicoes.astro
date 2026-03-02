@@ -13,136 +13,219 @@ import Layout from '../layouts/Layout.astro';
 	<!-- Main Content -->
 	<main class="bg-[#FAF0E6] min-h-screen">
 		<div class="max-w-4xl mx-auto px-4 py-12 md:py-20">
-			<a href="/" class="inline-flex items-center text-[#d28cb4] hover:underline font-medium mb-6">
+			<a href={import.meta.env.BASE_URL} class="inline-flex items-center text-[#d28cb4] hover:underline font-medium mb-6">
 				← Voltar à página principal
 			</a>
 			<h1 class="text-4xl md:text-5xl font-bold text-[#111827] mb-4">
 				Termos e Condições
 			</h1>
-			<p class="text-[#6b7280] mb-8">Última atualização: Fevereiro 2026</p>
+			<p class="text-[#6b7280] mb-8">Última atualização: 20 de fevereiro de 2026</p>
 
 			<div class="space-y-8 text-[#4b5563]">
-				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">1. Introdução</h2>
+				<!-- Intro paragraphs -->
+				<div>
 					<p class="mb-4">
-						Bem-vindo à Comfy App ("Aplicação"), desenvolvida pela Associação MOCES no âmbito do projeto Zona De(s)conforto.
-						Ao descarregar, instalar ou utilizar a nossa Aplicação, concorda com estes Termos e Condições.
-						Se não concordar com estes termos, por favor não utilize a Aplicação.
+						Esta aplicação (referida neste documento como "App") é gerida pela <strong>Associação MÔCES</strong>, NIPC 516126032, com sede na Rua da Escola Primária, Edifício Administrativo da Fundação Manuel Viegas Guerreiro, Querença, Loulé, 8100-129 (referida neste documento como "Instituição", "Nós"). A Instituição disponibiliza esta App, incluindo todas as informações, ferramentas e serviços nela acessíveis ao Utilizador, estando o seu uso sujeito à aceitação integral de todos os termos, condições, políticas e avisos aqui estabelecidos.
+					</p>
+					<p class="mb-4">
+						Ao utilizar a Nossa App, o Utilizador concorda com estes Termos e Condições (referidos neste documento como "Termos").
 					</p>
 					<p>
-						A Comfy App é uma aplicação gratuita destinada a jovens dos 12 aos 18 anos, com o objetivo de promover
-						a saúde mental e o bem-estar emocional através de conteúdos educativos e ferramentas interativas.
+						Os títulos utilizados nestes Termos são incluídos apenas para conveniência e não limitam nem afetam de qualquer forma a interpretação dos mesmos.
+					</p>
+				</div>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Definições</h2>
+					<p class="mb-4">Para efeitos dos presentes Termos, entende-se por:</p>
+					<p class="mb-4">
+						a. <strong>App</strong> - aplicação móvel desenvolvida e operada pela Associação MÔCES.
+					</p>
+					<p class="mb-4">
+						b. <strong>Visitante</strong> - pessoa que acede à App sem utilizar o chat.
+					</p>
+					<p class="mb-4">
+						c. <strong>Utilizador</strong> - qualquer pessoa com idade entre 12 e 18 anos que acede ao App, incluindo a funcionalidade de chat e o seu conteúdo.
+					</p>
+					<p class="mb-4">
+						d. <strong>Adulto</strong> - pessoa com 18 anos ou mais, com capacidade legal, que fornece consentimento, supervisiona e assume a responsabilidade pelo acesso e utilização do App e da funcionalidade de chat por parte do menor
+					</p>
+					<p class="mb-4">
+						e. <strong>Conteúdo</strong> - sugestões de filmes, séries, livros e outros materiais relacionados com juventude e saúde mental.
+					</p>
+					<p class="mb-4">
+						f. <strong>Chat</strong> - ferramenta de comunicação destinada a esclarecimentos e partilha de opiniões.
+					</p>
+					<p class="mb-4">
+						g. <strong>Instituição</strong> - entidade responsável pela gestão da App;
+					</p>
+					<p>
+						h. <strong>Anonimato</strong> - a APP permite o acesso aos utilizadores de forma anónima e não necessita de aceder à informação pessoal a não ser nos casos aqui indicados.
 					</p>
 				</section>
 
 				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">2. Licença de Utilização</h2>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Descrição da App</h2>
 					<p class="mb-4">
-						A MOCES concede-lhe uma licença limitada, não exclusiva, intransmissível e revogável para utilizar
-						a Aplicação para fins pessoais e não comerciais, de acordo com estes Termos.
+						A missão central da instituição designada como Associação MÔCES é promover o bem-estar juvenil e a literacia em saúde mental.
 					</p>
-					<p>Não pode:</p>
+					<p class="mb-4">
+						A App disponibiliza sugestões curadas de filmes, séries, livros e outros materiais de media relacionados com juventude e saúde mental, informação geral sobre o bem-estar psicológico e um chat para orientação informativa, esclarecimento de dúvidas e partilha de opiniões.
+					</p>
+					<p class="mb-4">
+						A Instituição não presta psicoterapia, avaliação psicológica, intervenção em crise nem serviços clínicos através da App. O Conteúdo pode incluir obras ficcionais ou materiais baseados em realidades de outros países (ou seja, diferentes de Portugal).
+					</p>
+					<p>
+						Embora a Instituição reveja os materiais para evitar desinformação, não pode ser responsabilizada pelas perspetivas, interpretações ou opiniões expressas no Conteúdo sugerido.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Registo de Utilizador</h2>
+
+					<h3 class="text-xl font-semibold text-[#111827] mb-3 mt-6">Requisitos de Elegibilidade e Idade</h3>
+					<p class="mb-4">
+						A App destina-se a indivíduos com idades entre 12 e 18 anos. Ao registar-se ou utilizar a App, o Utilizador confirma que se enquadra nesta faixa etária.
+					</p>
+					<p>
+						Determinados Conteúdos e funcionalidades podem ser restringidos com base na idade. Utilizadores entre 16 e 18 anos poderão ter acesso a materiais ou funcionalidades adicionais que não estão disponíveis para Utilizadores entre 12 e 15 anos.
+					</p>
+
+					<h3 class="text-xl font-semibold text-[#111827] mb-3 mt-6">Consentimento Parental ou do Tutor Legal</h3>
+					<p>
+						Se o Utilizador tiver menos de 18 anos, deve utilizar a App com o conhecimento e consentimento do seu pai, mãe ou tutor legal. O Adulto responsável deve aprovar o acesso do Utilizador e supervisionar a utilização da App e das suas funcionalidades, incluindo o chat.
+					</p>
+
+					<h3 class="text-xl font-semibold text-[#111827] mb-3 mt-6">Criação de Conta</h3>
+					<p class="mb-4">
+						A App requer a criação de uma conta de Utilizador para acesso geral ao seu Conteúdo.
+					</p>
+					<p>
+						Determinadas funcionalidades opcionais, como o chat ou interações personalizadas, podem exigir que o Utilizador forneça informações básicas (como nome ou endereço de e-mail) exclusivamente para fins de comunicação, identificação e prestação do serviço.
+					</p>
+
+					<h3 class="text-xl font-semibold text-[#111827] mb-3 mt-6">Obrigações do Utilizador</h3>
+					<p class="mb-4">O Utilizador compromete-se a:</p>
 					<ul class="list-disc list-inside ml-4 mt-2 space-y-1">
-						<li>Copiar, modificar ou distribuir a Aplicação</li>
-						<li>Fazer engenharia reversa ou tentar extrair o código-fonte</li>
-						<li>Utilizar a Aplicação para fins ilegais ou não autorizados</li>
-						<li>Remover avisos de direitos de autor ou propriedade</li>
+						<li>utilizar a App exclusivamente para fins lícitos;</li>
+						<li>não realizar ações destinadas a desestabilizar o funcionamento da App, tentar aceder de forma não autorizada à App, interferir, bloquear ou causar danos a quaisquer mecanismos de segurança da App, nem praticar quaisquer outras ações que violem os direitos da Instituição e/ou de terceiros;</li>
+						<li>não utilizar a App para realizar ações que comprometam a segurança da rede ou perturbem o funcionamento de quaisquer meios técnicos ou de software ligados à Internet, incluindo ataques a recursos acessíveis através da Internet, nomeadamente os meios técnicos e de software da Instituição, sem se limitar a estes;</li>
+						<li>não publicar conteúdos que violem direitos de terceiros;</li>
+						<li>notificar a Instituição sobre quaisquer erros, falhas ou problemas de segurança detetados;</li>
+						<li>não publicar na App informações inexatas, conteúdos que possam prejudicar a reputação, dignidade ou bom nome de terceiros, conteúdos que contenham spam ou informações sobre esquemas financeiros fraudulentos, que promovam violência, ódio ou discriminação, que incluam ligações para recursos externos, que violem direitos de terceiros (incluindo dados de contacto), ou que de qualquer forma violem a legislação aplicável;</li>
+						<li>manter informado sobre os conteúdos da App relacionados com a prestação dos serviços, incluindo alterações e aditamentos a estes Termos.</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">3. Aviso de Saúde Importante</h2>
-					<div class="bg-[#fef3c7] border-l-4 border-[#f59e0b] p-4 rounded-r-lg">
-						<p class="font-semibold text-[#92400e] mb-2">Atenção:</p>
-						<p class="text-[#92400e]">
-							A Comfy App fornece informações gerais e ferramentas de apoio ao bem-estar emocional.
-							<strong>Não substitui aconselhamento médico profissional, diagnóstico ou tratamento.</strong>
-							Se está a experienciar uma crise de saúde mental ou tem pensamentos de autolesão,
-							contacte imediatamente um profissional de saúde ou ligue para o SNS 24 (808 24 24 24).
-						</p>
-					</div>
-				</section>
-
-				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">4. Utilização por Menores</h2>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Resolução de Litígios</h2>
 					<p class="mb-4">
-						A Aplicação é destinada a jovens dos 12 aos 18 anos. Para utilizadores menores de 16 anos,
-						recomendamos que os pais ou responsáveis legais revejam estes Termos e supervisionem a utilização da Aplicação.
+						Os litígios decorrentes da execução destes Termos são resolvidos através de um procedimento de reclamação. As reclamações e queixas devem ser enviadas à Instituição para o seguinte endereço de e-mail: <a href="mailto:ola@moces.pt" class="text-[#d28cb4] hover:underline">ola@moces.pt</a>.
 					</p>
 					<p>
-						Todo o conteúdo é desenvolvido por profissionais de saúde mental e adaptado às diferentes faixas etárias.
+						Caso não seja possível alcançar um acordo, os litígios serão apreciados de acordo com a legislação portuguesa. Para todas as matérias não previstas nestes Termos, as Partes regem-se pela legislação vigente em Portugal.
 					</p>
 				</section>
 
 				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">5. Privacidade e Proteção de Dados</h2>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Utilização da App por Menores</h2>
 					<p class="mb-4">
-						A sua privacidade é importante para nós. A recolha e tratamento dos seus dados pessoais é feita
-						em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD) e a legislação portuguesa aplicável.
+						A App destina-se a ser utilizada por indivíduos com idades entre 12 e 18 anos.
 					</p>
 					<p class="mb-4">
-						Comprometemo-nos a:
+						Se tiver menos de 18 anos, o acesso à App só pode ocorrer com o conhecimento, consentimento e supervisão do seu pai/mãe ou tutor legal. O Adulto responsável deve aprovar e supervisionar o acesso e a utilização da App pelo Utilizador, incluindo o seu Conteúdo e a funcionalidade de chat.
 					</p>
-					<ul class="list-disc list-inside ml-4 space-y-1">
-						<li>Recolher apenas os dados necessários para o funcionamento da Aplicação</li>
-						<li>Não partilhar os seus dados com terceiros para fins comerciais</li>
-						<li>Proteger os seus dados com medidas de segurança adequadas</li>
-						<li>Permitir que solicite acesso, retificação ou eliminação dos seus dados</li>
+					<p class="mb-4">
+						Determinados Conteúdos, funcionalidades ou serviços podem ser restringidos com base na idade. Alguns materiais ou funcionalidades poderão estar disponíveis apenas para Utilizadores entre 16 e 18 anos, não sendo acessíveis a Utilizadores entre 12 e 15 anos.
+					</p>
+					<p class="mb-4">
+						Embora a Instituição possa implementar medidas técnicas e organizacionais razoáveis para garantir uma utilização adequada à idade, não pode assegurar que todo o Conteúdo será apropriado para cada Utilizador individual. Recomenda-se que pais, mães e tutores legais supervisionem ativamente a utilização da App pelo menor e avaliem se o Conteúdo acedido é adequado.
+					</p>
+					<p>
+						A Instituição reserva o direito de restringir ou limitar o acesso a qualquer parte da App sempre que tal seja necessário por motivos de segurança ou conformidade legal, ou quando o comportamento do Utilizador viole estes Termos.
+					</p>
+
+					<h3 class="text-xl font-semibold text-[#111827] mb-3 mt-6">Ligações para Sites de Terceiros</h3>
+					<p>
+						A App pode conter ligações para websites ou recursos externos não operados pela Instituição. A inclusão dessas ligações não implica qualquer endosso. A Instituição não é responsável pelo conteúdo, exatidão ou práticas de privacidade desses websites. O acesso a websites de terceiros é feito por conta e risco do Utilizador, que deve consultar os respetivos termos e políticas de privacidade.
+					</p>
+
+					<h3 class="text-xl font-semibold text-[#111827] mb-3 mt-6">Utilização da Informação</h3>
+					<p class="mb-4">
+						O Utilizador garante que a informação obtida na App será utilizada apenas para fins pessoais e de forma que não viole quaisquer direitos ou interesses legítimos, incluindo direitos de propriedade intelectual, e que não será transmitida a terceiros. Caso sejam apresentadas reclamações contra a Instituição por terceiros relativamente a informações publicadas pelo Utilizador na App, o Utilizador compromete-se a resolver integralmente, por sua conta e responsabilidade, todos os litígios com os reclamantes e a indemnizar a Instituição por todos os danos sofridos.
+					</p>
+					<p class="mb-4">
+						A Instituição reserva o direito de comunicar qualquer atividade que considere ilícita ou contrária a estes Termos e de cooperar com autoridades policiais ou regulatórias sempre que legalmente exigido.
+					</p>
+					<p>
+						O Visitante e/ou Utilizador garante que todas as secções destes Termos lhe são claras e que as aceita integralmente. Em caso de feedback positivo ou reclamações, o Visitante e/ou Utilizador deve contactar-nos através do endereço de e-mail indicado nestes Termos.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Direitos e Obrigações das Partes</h2>
+
+					<p class="mb-4"><strong>A Instituição tem o direito de:</strong></p>
+					<ul class="list-disc list-inside ml-4 mt-2 space-y-1 mb-6">
+						<li>modificar a App a qualquer momento;</li>
+						<li>suspender ou limitar o acesso por motivos técnicos ou de segurança;</li>
+						<li>remover mensagens que violem estes Termos;</li>
+						<li>contactar os indivíduos para esclarecimentos relacionados com a utilização do chat.</li>
+					</ul>
+
+					<p class="mb-4"><strong>A Instituição é obrigada a:</strong></p>
+					<ul class="list-disc list-inside ml-4 mt-2 space-y-1 mb-6">
+						<li>cumprir estes Termos;</li>
+						<li>proteger os dados pessoais de acordo com o RGPD;</li>
+						<li>não utilizar os dados para finalidades não autorizadas.</li>
+					</ul>
+
+					<p class="mb-4"><strong>O Utilizador tem o direito de:</strong></p>
+					<ul class="list-disc list-inside ml-4 mt-2 space-y-1 mb-6">
+						<li>aceder ao Conteúdo disponível na App;</li>
+						<li>utilizar o chat para fins informativos;</li>
+						<li>contactar a Instituição com sugestões, questões ou reclamações.</li>
+					</ul>
+
+					<p class="mb-4"><strong>O Utilizador é obrigado a:</strong></p>
+					<ul class="list-disc list-inside ml-4 mt-2 space-y-1">
+						<li>cumprir rigorosamente estes Termos com a aprovação do ADULTO responsável e utilizar a App apenas para fins legais, em conformidade com a legislação aplicável;</li>
+						<li>legalmente exigido ou expressamente autorizado pelo titular dos dados.</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">6. Propriedade Intelectual</h2>
-					<p>
-						Todos os conteúdos da Aplicação, incluindo textos, gráficos, logótipos, ícones, imagens,
-						áudios e software, são propriedade da MOCES ou dos seus licenciadores e estão protegidos
-						por leis de direitos de autor e propriedade intelectual.
-					</p>
-				</section>
-
-				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">7. Limitação de Responsabilidade</h2>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Alterações aos Termos</h2>
 					<p class="mb-4">
-						A Aplicação é fornecida "tal como está". Na máxima extensão permitida por lei, a MOCES não será
-						responsável por quaisquer danos diretos, indiretos, incidentais ou consequenciais resultantes
-						da utilização ou impossibilidade de utilização da Aplicação.
+						A Instituição reserva o direito, a seu critério, a qualquer momento e sem aviso prévio, de modificar, eliminar ou alterar os serviços, os Termos e/ou qualquer página desta App.
 					</p>
-					<p>
-						Esforçamo-nos por manter a Aplicação disponível e livre de erros, mas não garantimos que
-						estará sempre acessível ou funcionará sem interrupções.
-					</p>
-				</section>
-
-				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">8. Alterações aos Termos</h2>
-					<p>
-						Reservamo-nos o direito de modificar estes Termos a qualquer momento. As alterações entram em vigor
-						após publicação na Aplicação. A continuação da utilização após alterações constitui aceitação dos novos Termos.
-					</p>
-				</section>
-
-				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">9. Lei Aplicável</h2>
-					<p>
-						Estes Termos são regidos pela lei portuguesa. Qualquer litígio será submetido à jurisdição
-						exclusiva dos tribunais portugueses.
-					</p>
-				</section>
-
-				<section>
-					<h2 class="text-2xl font-semibold text-[#111827] mb-4">10. Contacto</h2>
 					<p class="mb-4">
-						Para questões relacionadas com estes Termos e Condições ou com a Aplicação, contacte-nos:
+						A data de "Última Atualização" acima indicará quando os Termos foram revistos pela última vez. Ao continuar a utilizar a App após essa data, o Utilizador aceita as alterações efetuadas.
+					</p>
+					<p>
+						Se qualquer disposição destes Termos for considerada inválida ou inexequível em determinadas circunstâncias, tal não afeta a sua aplicação noutras circunstâncias, permanecendo as restantes disposições válidas e plenamente aplicáveis.
+					</p>
+				</section>
+
+				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Contactos</h2>
+					<p class="mb-4">
+						Sugestões, reclamações, questões e outras mensagens do Utilizador relacionadas com o funcionamento do Site ou do Serviço devem ser enviadas à Instituição através do seguinte endereço de e-mail: <a href="mailto:ola@moces.pt" class="text-[#d28cb4] hover:underline">ola@moces.pt</a>.
+					</p>
+					<p class="mb-4">
+						Mensagens enviadas pelo Utilizador à Instituição que não permitam a sua identificação não serão consideradas pela Instituição.
 					</p>
 					<div class="bg-white rounded-lg p-4 border border-[#e5e7eb]">
-						<p class="font-semibold text-[#111827]">Associação MOCES</p>
+						<p class="font-semibold text-[#111827]">Associação MÔCES</p>
+						<p>NIPC 516126032</p>
+						<p>Rua da Escola Primária, Edifício Administrativo da Fundação Manuel Viegas Guerreiro, Querença, Loulé, 8100-129</p>
 						<p>Email: <a href="mailto:ola@moces.pt" class="text-[#d28cb4] hover:underline">ola@moces.pt</a></p>
 					</div>
 				</section>
 			</div>
 
 			<div class="mt-12 pt-8 border-t border-[#e5e7eb]">
-				<a href="/" class="inline-flex items-center text-[#d28cb4] hover:underline font-medium">
+				<a href={import.meta.env.BASE_URL} class="inline-flex items-center text-[#d28cb4] hover:underline font-medium">
 					← Voltar à página principal
 				</a>
 			</div>
