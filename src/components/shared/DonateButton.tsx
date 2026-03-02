@@ -13,7 +13,7 @@ export default function DonateButton({
   href = 'https://gofund.me/5eb16f31a', 
   onClick, 
   className = '',
-  text = 'Faça uma Doação',
+  text = 'FAZ UMA DOAÇÃO',
   showFace = true
 }: DonateButtonProps) {
   // Check if className contains a background color class

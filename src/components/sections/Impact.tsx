@@ -12,7 +12,7 @@ export default function Impact() {
           <div className="flex flex-col">
             {/* Title */}
             <h2 className="text-3xl font-bold text-[#111827] text-left md:text-5xl lg:text-6xl mb-8 md:mb-12">
-              O Impacto da <br className='md:hidden'/>tua doação
+              O impacto da <br className='md:hidden'/>tua doação
             </h2>
             
             {/* Intro paragraph */}
