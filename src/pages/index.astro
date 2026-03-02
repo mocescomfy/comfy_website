@@ -1,6 +1,7 @@
 ---
 import LogoZone from '../components/LogoZone.astro';
 import Navbar from '../components/Navbar.tsx';
+import AppDownloadBadges from '../components/AppDownloadBadges.astro';
 import Hero from '../components/sections/Hero.tsx';
 import Project from '../components/sections/Project.tsx';
 import AppComfy from '../components/sections/AppComfy.tsx';
@@ -21,7 +22,8 @@ import Layout from '../layouts/Layout.astro';
 		<Navbar client:load />
 	</div>
 
-	<!-- Decorative Background Star removed to avoid duplication (handled in Hero) -->
+	<!-- App Download Badges -->
+	<AppDownloadBadges />
 
 	<!-- Main Content -->
 	<main class="relative z-10">
