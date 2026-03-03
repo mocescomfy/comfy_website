@@ -31,22 +31,24 @@ export default function Project() {
         </svg>
       </div>
       <div className="container-responsive relative z-10">
-        {/* Row 1: Title and badge */}
-        <div className="flex items-start justify-between gap-8">
-          <div className="max-w-[752px]">
-            <h2 className="font-semibold text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08] text-black">
-              O projeto Zona De(s)conforto
-            </h2>
-            <p className="mt-6 font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
-              <strong>Zona De(s)conforto - uma zona confortável para partilhar o desconforto</strong>, é um projeto financiado pelo Portugal Inovação Social e criado pela associação MOCES.
-            </p>
-            <p className="mt-4 font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
-              A nossa missão é promover a saúde mental de jovens dos 12 aos 18 anos, através de uma aplicação inovadora, gratuita e acessível: The Comfy App.
-            </p>
-          </div>
-          <div className="hidden md:block shrink-0 md:w-[220px] md:h-[220px] lg:w-[320px] lg:h-[320px] rounded-full overflow-hidden">
+        {/* Zona De(s)conforto Logo - Centered and Enlarged */}
+        <div className="flex justify-center mb-8 md:mb-12">
+          <div className="w-[200px] h-[200px] md:w-[280px] md:h-[280px] lg:w-[380px] lg:h-[380px] rounded-full overflow-hidden">
             <img src={projectImg.src} alt="Logótipo Zona De(s)conforto" className="w-full h-full object-cover" loading="lazy" />
           </div>
+        </div>
+
+        {/* Title and intro text */}
+        <div className="max-w-[900px] mx-auto text-center">
+          <h2 className="font-semibold text-[40px] md:text-[56px] lg:text-[72px] leading-[1.08] text-black">
+            O projeto Zona De(s)conforto
+          </h2>
+          <p className="mt-6 font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
+            <strong>Zona De(s)conforto - uma zona confortável para partilhar o desconforto</strong>, é um projeto financiado pelo Portugal Inovação Social e criado pela associação MOCES.
+          </p>
+          <p className="mt-4 font-normal text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] text-black">
+            A nossa missão é promover a saúde mental de jovens dos 12 aos 18 anos, através de uma aplicação inovadora, gratuita e acessível: The Comfy App.
+          </p>
         </div>
 
         {/* Row 2: Media card + copy + CTA */}
