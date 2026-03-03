@@ -73,3 +73,28 @@ Report back:
 ```
 
 This keeps browser interactions and screenshots out of the main context.
+
+## Client Requests
+
+Client communication logs and extracted tasks are stored in `client-requests/`.
+
+### Current Thread Logs
+
+| File | Description |
+|------|-------------|
+| `MOCES-email-thread-2026-02-24.md` | Full email thread history with Maria Lopes (MOCES), all requests, and linked GitHub issues |
+
+### Client Assets
+
+Downloaded attachments from client emails are stored in `client-assets/`:
+- Pre-aligned logo bars (1.png, 2.png, 3.png)
+- App Store / Google Play buttons
+- Individual logo files (SVG/PNG)
+
+### Workflow for New Client Emails
+
+1. **Check email** - Open Gmail and search for MOCES thread
+2. **Extract todos** - Document new requests in the thread log file
+3. **Create GitHub issues** - Use the issue template, link to thread log
+4. **Download attachments** - Save to `client-assets/`
+5. **Update thread log** - Mark attachments as downloaded, link issues
