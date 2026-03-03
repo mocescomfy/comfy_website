@@ -15,10 +15,10 @@ import comfyLogo from '../assets/comfy.png';
       <span class="w-6 h-[2px] bg-white rounded-sm"></span>
     </button>
 
-    <!-- Logos container - horizontal row -->
-    <div class="flex flex-row items-center gap-6">
-      <!-- Moces Logo -->
-      <div class="flex items-center justify-center flex-shrink-0 w-[40px] h-[50px] sm:w-[60px] sm:h-[75px]">
+    <!-- Logos container - horizontal row (balanced visual weight) -->
+    <div class="flex flex-row items-center gap-4 sm:gap-6">
+      <!-- Moces Logo (smaller - has hands icon making it visually taller) -->
+      <div class="flex items-center justify-center flex-shrink-0 h-[32px] sm:h-[42px] w-auto">
         <Image
           src={mocesLogo}
           alt="Moces - Organização sem fins lucrativos"
@@ -26,12 +26,12 @@ import comfyLogo from '../assets/comfy.png';
           height={75}
           loading="eager"
           decoding="async"
-          class="w-full h-full object-contain"
+          class="h-full w-auto object-contain"
         />
       </div>
 
       <!-- Zona de(s) Conforto Logo -->
-      <div class="flex items-center justify-center flex-shrink-0 w-20 h-20 sm:w-20 sm:h-20">
+      <div class="flex items-center justify-center flex-shrink-0 h-[45px] sm:h-[55px] w-auto">
         <Image
           src={zonaLogo}
           alt="Zona de(s) Conforto"
@@ -39,12 +39,12 @@ import comfyLogo from '../assets/comfy.png';
           height={80}
           loading="eager"
           decoding="async"
-          class="w-full h-full object-contain"
+          class="h-full w-auto object-contain"
         />
       </div>
 
-      <!-- Comfy Logo -->
-      <div class="flex items-center justify-center flex-shrink-0 w-[50px] h-[60px] sm:w-[80px] sm:h-[95px]">
+      <!-- Comfy Logo (larger - more compact design) -->
+      <div class="flex items-center justify-center flex-shrink-0 h-[60px] sm:h-[70px] w-auto">
         <Image
           src={comfyLogo}
           alt="Comfy App"
@@ -52,7 +52,7 @@ import comfyLogo from '../assets/comfy.png';
           height={95}
           loading="eager"
           decoding="async"
-          class="w-full h-full object-contain"
+          class="h-full w-auto object-contain"
         />
       </div>
     </div>
