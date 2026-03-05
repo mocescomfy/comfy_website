@@ -1,5 +1,5 @@
 import React from 'react';
-import barLogos from '../../assets/bar-logos.png';
+import barLogos from '../../assets/bar-logos.svg';
 import barCofinanciado from '../../assets/footer/bar-cofinanciado.png';
 import barInvestidores from '../../assets/footer/bar-investidores.png';
 

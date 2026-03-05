@@ -1,9 +1,6 @@
 ---
 // Logo Zone Component - Displays the three brand logos above navigation
-import { Image } from 'astro:assets';
-import mocesLogo from '../assets/moces.svg';
-import zonaLogo from '../assets/zonadesconforto.png';
-import comfyLogo from '../assets/comfy.png';
+import barLogos from '../assets/bar-logos.svg';
 ---
 
 <section class="relative w-full py-4 flex justify-center items-center bg-transparent">
@@ -15,46 +12,14 @@ import comfyLogo from '../assets/comfy.png';
       <span class="w-6 h-[2px] bg-white rounded-sm"></span>
     </button>
 
-    <!-- Logos container - horizontal row (balanced visual weight) -->
-    <div class="flex flex-row items-center gap-4 sm:gap-6">
-      <!-- Moces Logo (smaller - has hands icon making it visually taller) -->
-      <div class="flex items-center justify-center flex-shrink-0 h-[32px] sm:h-[42px] w-auto">
-        <Image
-          src={mocesLogo}
-          alt="Moces - Organização sem fins lucrativos"
-          width={60}
-          height={75}
-          loading="eager"
-          decoding="async"
-          class="h-full w-auto object-contain"
-        />
-      </div>
-
-      <!-- Zona de(s) Conforto Logo -->
-      <div class="flex items-center justify-center flex-shrink-0 h-[45px] sm:h-[55px] w-auto">
-        <Image
-          src={zonaLogo}
-          alt="Zona de(s) Conforto"
-          width={80}
-          height={80}
-          loading="eager"
-          decoding="async"
-          class="h-full w-auto object-contain"
-        />
-      </div>
-
-      <!-- Comfy Logo (larger - more compact design) -->
-      <div class="flex items-center justify-center flex-shrink-0 h-[60px] sm:h-[70px] w-auto">
-        <Image
-          src={comfyLogo}
-          alt="Comfy App"
-          width={80}
-          height={95}
-          loading="eager"
-          decoding="async"
-          class="h-full w-auto object-contain"
-        />
-      </div>
+    <!-- Logo bar (pre-aligned by client) -->
+    <div class="flex items-center justify-center">
+      <img
+        src={barLogos.src}
+        alt="MOCES, Zona De(s)conforto, Comfy App"
+        class="h-[50px] sm:h-[60px] md:h-[70px] w-auto object-contain"
+        loading="eager"
+      />
     </div>
   </div>
   <script is:inline>
