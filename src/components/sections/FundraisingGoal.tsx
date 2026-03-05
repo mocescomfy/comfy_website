@@ -7,7 +7,7 @@ export default function FundraisingGoal() {
       {/* Title for mobile and desktop */}
       <h3 className="text-[40px] leading-[48px] font-bold text-[#111827] mb-12 text-center md:hidden lg:block" >
         <p className="mb-0">Meta de</p>
-        <p>Arrecadação</p>
+        <p>Angariação</p>
       </h3>
 
       {/* Progress Bar Container */}
@@ -18,7 +18,7 @@ export default function FundraisingGoal() {
             className="text-2xl font-bold text-[#111827] whitespace-nowrap text-center"
             style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', fontFamily: 'Fredoka, sans-serif' }}
           >
-            Meta de Arrecadação
+            Meta de Angariação
           </h3>
         </div>
 
