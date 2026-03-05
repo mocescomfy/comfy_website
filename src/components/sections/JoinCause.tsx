@@ -92,7 +92,7 @@ export default function JoinCause() {
                         style={{ filter: 'hue-rotate(-30deg) saturate(1.5) brightness(0.85)' }}
                       />
                     </span>
-                    <span className="leading-[32px]">Fazer voluntariado no projeto (psicólogos, criadores de conteúdo, designers)</span>
+                    <span className="leading-[32px]">Fazer voluntariado no projeto (psicólog@s, criadores de conteúdo, designers)</span>
                   </li>
 
                   <li className="flex items-start mt-[32px]">

@@ -112,7 +112,7 @@ export default function Project() {
           <div className="flex flex-col gap-12 max-w-[558px]">
             <div className="text-black">
               <p className="text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px]">
-                Acreditamos que falar sobre emoções, aprender a regulá-las e pedir ajuda não deve ser um tabu. Por isso, criámos um espaço digital seguro, pensado para os jovens, onde podem desenvolver competências emocionais, fortalecer a autoestima, cultivar a resiliência e aceder a ferramentas práticas para lidar com os desafios da vida. Todo o conteúdo é adequado à idade e complementado por apoio profissional responsável, através de uma linha de apoio via chat com psicólogos.
+                Acreditamos que falar sobre emoções, aprender a regulá-las e pedir ajuda não deve ser um tabu. Por isso, criámos um espaço digital seguro, pensado para os jovens, onde podem desenvolver competências emocionais, fortalecer a autoestima, cultivar a resiliência e aceder a ferramentas práticas para lidar com os desafios da vida. Todo o conteúdo é adequado à idade e complementado por apoio profissional responsável, através de uma linha de apoio via chat com psicólog@s.
               </p>
               <p className="text-[18px] leading-[28px] md:text-[22px] md:leading-8 lg:text-[24px] lg:leading-[32px] mt-4">
                 Este projeto é mais do que uma aplicação: é o início de um movimento para colocar a saúde mental no centro das prioridades sociais. Começamos pelo Município de Olhão, onde está a ser implementado o projeto-piloto, com o objetivo claro de expandir este impacto transformador a nível nacional, em colaboração com municípios, escolas e entidades parceiras.
