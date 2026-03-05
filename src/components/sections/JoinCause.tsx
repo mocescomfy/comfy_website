@@ -124,7 +124,7 @@ export default function JoinCause() {
               aria-hidden="true"
             >
               <span className="font-fredoka font-semibold text-[16px] md:text-[22px] lg:text-[24px] leading-none text-black text-center">
-                Contacta-nos através de email
+                Contacta-nos através de email: ola@moces.pt
               </span>
             </div>
 
@@ -135,7 +135,7 @@ export default function JoinCause() {
                 href="mailto:ola@moces.pt"
                 className="!w-full !rounded-[24px] !bg-[#D7D7AA] !border-4 !border-black !px-[16px] md:!px-[40px] !py-[24px] !font-fredoka font-semibold !text-[16px] md:!text-[22px] lg:!text-[24px] !leading-none !text-black hover:!bg-[#D7D7AA] hover:!translate-x-1 hover:!translate-y-1 active:!translate-x-1 active:!translate-y-1 !shadow-none transition-all duration-200 !text-center"
               >
-                Contacta-nos através de email
+                Contacta-nos através de email: ola@moces.pt
               </Button>
             </div>
           </div>
