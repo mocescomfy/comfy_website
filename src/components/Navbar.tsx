@@ -11,7 +11,7 @@ const navItems: NavItem[] = [
   { label: 'IMPACTO E RESULTADOS', href: '#impacto' },
   { label: 'COMO CONTRIBUIR', href: '#contribuir' },
   { label: 'TRANSPARÊNCIA', href: '#transparencia' },
-  { label: 'JUNTE-SE À CAUSA', href: '#causa' },
+  { label: 'JUNTA-TE À CAUSA', href: '#causa' },
 ];
 
 export default function Navbar() {
