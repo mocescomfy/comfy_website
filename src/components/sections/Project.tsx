@@ -54,7 +54,7 @@ export default function Project() {
         {/* Row 2: Media card + copy + CTA */}
         <div className="mt-12 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 items-start gap-10 lg:gap-16 place-items-center lg:place-items-start">
           {/* Mascots - 3 rows group photo style */}
-          <div className="place-self-center relative w-[280px] h-[300px] md:w-[380px] md:h-[380px] lg:w-[660px] lg:h-[650px]">
+          <div className="place-self-center relative w-[280px] h-[240px] md:w-[380px] md:h-[380px] lg:w-[660px] lg:h-[650px]">
             {/* Back row - 3 small mascots */}
             <img
               src="app/Comfy_Bored.png"
