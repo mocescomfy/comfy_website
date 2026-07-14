@@ -4,6 +4,12 @@
 
 MOCES landing page for the "Zona De(s)conforto" mental health initiative. Built with Astro + TypeScript.
 
+## Deployment
+
+- **Live (production) site:** https://thecomfyapp.com/ — served from a web server (the SSH/rsync deploy target in `.github/workflows/deploy.yml`).
+- Deploys run automatically on push to `main`.
+- The GitHub Pages build (`https://mocescomfy.github.io/comfy_website/`) also runs but is not the production address; treat `https://thecomfyapp.com/` as the canonical live URL when verifying changes.
+
 ## Figma Design Reference
 
 Main file: https://www.figma.com/design/odanCgLViklOxyQEGP7t5t/Moces_Landing-Page_PA--Copy-?node-id=1-40
