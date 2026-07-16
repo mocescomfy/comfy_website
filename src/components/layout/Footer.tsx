@@ -49,7 +49,7 @@ export default function Footer() {
           <a href={`${base}termosecondicoes`} className="text-gray-600 hover:text-black hover:underline">
             Termos e Condições
           </a>
-          <a href={`${base}politicadeprivacidade`} className="text-gray-600 hover:text-black hover:underline">
+          <a href={`${base}termosecondicoes#politica-de-privacidade`} className="text-gray-600 hover:text-black hover:underline">
             Política de Privacidade
           </a>
         </div>
