@@ -14,14 +14,39 @@ import '../styles/global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Comfy - App by Moces | Bem-estar e Conforto Digital</title>
 
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-L0DNH564R3"></script>
+		<!--
+			Google Analytics (gtag.js) — consent-gated for GDPR / ePrivacy (Lei n.º 41/2004).
+			gtag.js is NOT loaded on page load. It is injected only after the user
+			grants consent via the cookie banner, or automatically on later visits if
+			consent was previously granted. Rejecting means it never loads.
+		-->
 		<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function () {
+				window.__COMFY_GA_ID = 'G-L0DNH564R3';
 
-			gtag('config', 'G-L0DNH564R3');
+				window.loadComfyAnalytics = function () {
+					if (window.__comfyGaLoaded) return;
+					window.__comfyGaLoaded = true;
+
+					var s = document.createElement('script');
+					s.async = true;
+					s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.__COMFY_GA_ID;
+					document.head.appendChild(s);
+
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){ dataLayer.push(arguments); }
+					window.gtag = gtag;
+					gtag('js', new Date());
+					gtag('config', window.__COMFY_GA_ID);
+				};
+
+				// Auto-load only if the user previously granted consent.
+				try {
+					if (localStorage.getItem('comfy-cookie-consent') === 'granted') {
+						window.loadComfyAnalytics();
+					}
+				} catch (e) { /* localStorage blocked — stay opted out */ }
+			})();
 		</script>
 	</head>
 	<body>
