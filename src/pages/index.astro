@@ -10,6 +10,7 @@ import Contribute from '../components/sections/Contribute.tsx';
 import Transparency from '../components/sections/Transparency.tsx';
 import JoinCause from '../components/sections/JoinCause.tsx';
 import Footer from '../components/layout/Footer.tsx';
+import CookieConsent from '../components/CookieConsent.tsx';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -51,6 +52,9 @@ import Layout from '../layouts/Layout.astro';
 
 	<!-- Footer -->
 	<Footer client:load />
+
+	<!-- GDPR cookie consent banner (gates Google Analytics) -->
+	<CookieConsent client:load />
 </Layout>
 
 <style>

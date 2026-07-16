@@ -4,7 +4,6 @@ import barCofinanciado from '../../assets/footer/bar-cofinanciado.png';
 import barInvestidores from '../../assets/footer/bar-investidores.png';
 
 export default function Footer() {
-  const base = import.meta.env.BASE_URL;
   return (
     <footer className="w-full px-4 py-12 md:px-8 md:py-16 bg-[#FAF0E6]">
       <div className="container-responsive space-y-10">
@@ -44,19 +43,32 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Legal links */}
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-inter">
-          <a href={`${base}termosecondicoes`} className="text-gray-600 hover:text-black hover:underline">
-            Termos e Condições
-          </a>
-          <a href={`${base}termosecondicoes#politica-de-privacidade`} className="text-gray-600 hover:text-black hover:underline">
-            Política de Privacidade
-          </a>
-        </div>
-
-        {/* Copyright */}
-        <div className="pt-4 text-center text-sm text-gray-600 font-inter">
+        {/* Copyright + legal links */}
+        <div className="pt-4 text-center text-sm text-gray-600 font-inter space-y-2">
           <p>© 2025 MOCES - Todos os direitos reservados</p>
+          <p className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+            <a
+              href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/termosecondicoes`}
+              className="hover:underline"
+            >
+              Termos e Condições
+            </a>
+            <span aria-hidden="true">·</span>
+            <a
+              href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/termosecondicoes#politica-de-privacidade`}
+              className="hover:underline"
+            >
+              Política de Privacidade
+            </a>
+            <span aria-hidden="true">·</span>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event('comfy:open-cookie-settings'))}
+              className="hover:underline cursor-pointer"
+            >
+              Definições de cookies
+            </button>
+          </p>
         </div>
       </div>
     </footer>
