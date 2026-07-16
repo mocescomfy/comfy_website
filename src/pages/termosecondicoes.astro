@@ -1,6 +1,7 @@
 ---
 import LogoZone from '../components/LogoZone.astro';
 import Footer from '../components/layout/Footer.tsx';
+import CookieConsent from '../components/CookieConsent.tsx';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -19,7 +20,7 @@ import Layout from '../layouts/Layout.astro';
 			<h1 class="text-4xl md:text-5xl font-bold text-[#111827] mb-4">
 				Termos e Condições
 			</h1>
-			<p class="text-black mb-8">Última atualização: 20 de fevereiro de 2026</p>
+			<p class="text-black mb-8">Última atualização: 16 de julho de 2026</p>
 
 			<div class="space-y-8 text-black">
 				<!-- Intro paragraphs -->
@@ -195,6 +196,22 @@ import Layout from '../layouts/Layout.astro';
 				</section>
 
 				<section>
+					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Cookies e Análise de Dados</h2>
+					<p class="mb-4">
+						Este website utiliza cookies e tecnologias semelhantes. Os cookies estritamente necessários ao funcionamento do site são sempre ativados. Os cookies de análise só são ativados após o consentimento explícito do Visitante, em conformidade com o Regulamento Geral sobre a Proteção de Dados (RGPD) e com a Lei n.º 41/2004, de 18 de agosto (Lei da Privacidade nas Comunicações Eletrónicas).
+					</p>
+					<p class="mb-4">
+						Para efeitos de análise estatística, utilizamos o <strong>Google Analytics</strong>, um serviço prestado pela Google Ireland Limited. Esta ferramenta recolhe informação sobre a utilização do website (como páginas visitadas e duração da visita) através de cookies, com o objetivo de compreender e melhorar a experiência dos utilizadores. No Google Analytics 4, os endereços IP são anonimizados por predefinição e não são armazenados.
+					</p>
+					<p class="mb-4">
+						O Google Analytics <strong>não é carregado</strong> enquanto o Visitante não der o seu consentimento. Ao aceder ao website pela primeira vez, é apresentado um aviso de cookies onde pode <strong>aceitar</strong> ou <strong>rejeitar</strong> os cookies de análise. Se rejeitar, nenhum cookie de análise é criado.
+					</p>
+					<p>
+						O consentimento é guardado no seu navegador e pode ser alterado ou retirado a qualquer momento através da ligação <strong>"Definições de cookies"</strong> disponível no rodapé do website.
+					</p>
+				</section>
+
+				<section>
 					<h2 class="text-2xl font-semibold text-[#111827] mb-4">Alterações aos Termos</h2>
 					<p class="mb-4">
 						A Instituição reserva o direito, a seu critério, a qualquer momento e sem aviso prévio, de modificar, eliminar ou alterar os serviços, os Termos e/ou qualquer página desta App.
@@ -234,4 +251,7 @@ import Layout from '../layouts/Layout.astro';
 
 	<!-- Footer -->
 	<Footer client:load />
+
+	<!-- GDPR cookie consent banner (gates Google Analytics) -->
+	<CookieConsent client:load />
 </Layout>
