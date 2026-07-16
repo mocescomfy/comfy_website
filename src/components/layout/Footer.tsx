@@ -54,6 +54,13 @@ export default function Footer() {
               Termos e Condições
             </a>
             <span aria-hidden="true">·</span>
+            <a
+              href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/termosecondicoes#politica-de-privacidade`}
+              className="hover:underline"
+            >
+              Política de Privacidade
+            </a>
+            <span aria-hidden="true">·</span>
             <button
               type="button"
               onClick={() => window.dispatchEvent(new Event('comfy:open-cookie-settings'))}
