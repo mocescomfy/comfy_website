@@ -71,7 +71,7 @@ export default function CookieConsent() {
       className="fixed inset-x-0 bottom-0 z-50 px-4 pb-4 sm:px-6 sm:pb-6"
     >
       <div className="container-responsive">
-        <div className="mx-auto max-w-3xl rounded-2xl bg-white shadow-[0_8px_30px_rgba(0,0,0,0.15)] border border-[#e5e7eb] p-5 sm:p-6 font-inter">
+        <div className="mx-auto w-full max-w-[768px] rounded-[20px] bg-white shadow-[0_8px_30px_rgba(0,0,0,0.15)] border border-[#e5e7eb] p-5 sm:p-6 font-inter">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="text-sm text-[#111827] leading-relaxed">
               <p className="font-semibold mb-1">Cookies e privacidade</p>
