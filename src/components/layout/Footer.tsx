@@ -4,6 +4,7 @@ import barCofinanciado from '../../assets/footer/bar-cofinanciado.png';
 import barInvestidores from '../../assets/footer/bar-investidores.png';
 
 export default function Footer() {
+  const base = import.meta.env.BASE_URL;
   return (
     <footer className="w-full px-4 py-12 md:px-8 md:py-16 bg-[#FAF0E6]">
       <div className="container-responsive space-y-10">
@@ -41,6 +42,16 @@ export default function Footer() {
               loading="lazy"
             />
           </div>
+        </div>
+
+        {/* Legal links */}
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-inter">
+          <a href={`${base}termosecondicoes`} className="text-gray-600 hover:text-black hover:underline">
+            Termos e Condições
+          </a>
+          <a href={`${base}politicadeprivacidade`} className="text-gray-600 hover:text-black hover:underline">
+            Política de Privacidade
+          </a>
         </div>
 
         {/* Copyright */}
