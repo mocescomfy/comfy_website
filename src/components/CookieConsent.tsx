@@ -46,7 +46,7 @@ export default function CookieConsent() {
 
   const accept = () => {
     storeConsent('granted');
-    // Load Google Analytics now that consent has been given.
+    // Load Google Analytics + Ads now that consent has been given.
     window.loadComfyAnalytics?.();
     setVisible(false);
   };
@@ -76,8 +76,9 @@ export default function CookieConsent() {
             <div className="text-sm text-[#111827] leading-relaxed">
               <p className="font-semibold mb-1">Cookies e privacidade</p>
               <p className="text-[#4b5563]">
-                Utilizamos cookies de análise (Google Analytics) para perceber
-                como o site é utilizado e melhorá-lo. Estes cookies só são
+                Utilizamos cookies de análise e publicidade (Google Analytics e
+                Google Ads) para perceber como o site é utilizado, melhorá-lo e
+                medir a eficácia das nossas campanhas. Estes cookies só são
                 ativados com o seu consentimento. Pode aceitar ou rejeitar.
                 Saiba mais nos nossos{' '}
                 <a href={termsUrl} className="text-black underline hover:no-underline">
