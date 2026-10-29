@@ -20,3 +20,8 @@ Request from Maria Lopes (MOCES), on behalf of their marketing team.
 - [x] Banner now mentions advertising cookies (Google Ads), required under GDPR now that Ads cookies are set
 - [x] Consent Mode v2 signals sent as granted after consent
 - Pending: Maria may want different wording
+
+### 4. Privacy policy update (our addition) ⏳ awaiting Maria's review
+- [x] Section 6 (PT + EN): new 6.1 "Website (thecomfyapp.com)" covering Google Analytics + Google Ads, consent, retention, US transfer (DPF), withdrawal via footer
+- [x] "Last updated" set to 29 Oct 2026
+- Drafted by us, since the August policy says no analytics/ad cookies are used. Maria / her legal contact should confirm the wording.
