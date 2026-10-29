@@ -17,6 +17,7 @@ const {
   <div class="flex justify-center items-center gap-4 md:gap-6">
     <a
       href={appStoreUrl}
+      data-store="ios"
       target="_blank"
       rel="noopener noreferrer"
       class="transition-transform hover:scale-105"
@@ -29,6 +30,7 @@ const {
     </a>
     <a
       href={googlePlayUrl}
+      data-store="android"
       target="_blank"
       rel="noopener noreferrer"
       class="transition-transform hover:scale-105"
@@ -41,3 +43,20 @@ const {
     </a>
   </div>
 </div>
+
+<script is:inline>
+  // Google Ads conversion on store badge clicks. Links open in a new tab,
+  // so we fire the event without blocking navigation. No-op until the
+  // user has accepted cookies (gtag is only defined after consent).
+  document.querySelectorAll('a[data-store]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (typeof window.gtag !== 'function') return;
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17410462215/19gKCIHZl7ccEIek-u1A',
+        value: 1.0,
+        currency: 'USD',
+        transport_type: 'beacon'
+      });
+    });
+  });
+</script>
